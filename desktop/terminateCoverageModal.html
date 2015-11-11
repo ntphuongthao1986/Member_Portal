@@ -1,0 +1,43 @@
+<!-- <div class="terminate-coverage-modal modal fade" id="terminate-coverage"> -->
+	<div class="modal-dialog terminate-coverage-modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title" id="policy-benefit-id">Terminate HMO Gold</h3>
+			</div>
+
+			<div class="modal-body">
+				<div class="body-title">Who's coverage do you want to terminate?</div>
+				<form class="form family-member" role="form">
+					<div class="form-group checkbox">
+						<input type="checkbox" name="member-id" value="member-id"><label>Evan Ross (Subscriber)</label>
+						<div class="alert-message">Terminating coverage for yourself will terminate coverage for your dependent as well.</div>
+					</div>
+					<div class="form-group checkbox">
+						<input type="checkbox" name="member-id" value="member-id"><label>Kim Ross</label>
+					</div>
+					<div class="form-group checkbox">
+						<input type="checkbox" name="member-id" value="member-id"><label>Alicia Ross</label>
+					</div>
+					<div class="form-group checkbox">
+						<input type="checkbox" name="member-id" value="member-id"><label>Rebecca Ross</label>
+					</div>
+					<div class="form-group maintenance-reason">
+						<label>Qualifying Event</label>
+						<div class="dropdown">
+							<select class="enrollment_memberXmaintenance_reason_code"> <!-- L_MAINTENANCE_REASON_CODE with FILTER contains ('TSC', 'TDC') -->
+								<option value="" selected>Select one...</option>
+								<option value="reason_code_1">Quit</option>
+								<option value="reason_code_2">Transfer</option>
+							</select>
+						</div>
+					</div>
+				</form>
+			</div> <!-- END of modal-body -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-primary">Save changes</button>	
+			</div>
+		</div>
+	</div>
+
+<!-- </div> -->

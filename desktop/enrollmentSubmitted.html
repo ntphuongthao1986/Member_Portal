@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Enrollment Review</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet" />
+	<link href="css/newenrollment.css" rel="stylesheet" />
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/responsive.css" rel="stylesheet" />
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+	
+  </head>
+  <body class="fade-in one">
+    
+	<header class="prelogin">
+		<div class="wrapper">
+			<div class="logo pull-left"></div>
+			<div class="info pull-right">
+				<div class="support">
+					<i class="glyphicon glyphicon-earphone"></i> 24/7 Customer Support
+					<span>1-800-555-4321</span>
+				</div>
+				<select id="locale">
+					<option value="english">English</option>
+					<option value="spanish" selected>Spanish</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+	</header>
+	
+	<section>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-12">					
+					<h1 class='custom-form-heading1'>Enrollment Submitted!</h1>
+					<p class="enrollreview-description lighttext-md">Thank you for enrolling! You should hear back from us within 48 hours.</p>
+				</div>
+			</div>
+			<form class="enroll-submitted" method="post" action="#">
+				
+				<div class="panel">
+					<div class="panel-body">
+						
+						<div class="row">
+							<div class="col-md-6">
+								<div class="login-section">
+									<img src="images/login.png" />
+									<h4>Log into your account</h4>
+									<p>
+										Now that you've successfully created an account and
+										submitted you're enrollment, log into your account to 
+										make a payment, manage your benefits, and more!
+									</p>
+									<div class="btn-wrap">
+										<button class="btn btn-primary btn-lg">Log In</button>
+										<button class="btn btn-default btn-lg">Not Now</button>
+									</div>
+								</div>
+							</div>
+							<div class="vertical-divider"></div>
+							<div class="col-md-6">
+								<div class="printcard-section">
+									<img src="images/card.png" />
+									<h4>Print your temporary id card</h4>
+									<p>
+										We will send you an ID card via your mailing address,
+										but in the meantime, you can print out a temporary
+										ID card below.
+									</p>
+									<div class="btn-wrap">
+										<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newEnrollment-modal-window" onclick="openEnrollmentModal('viewIdCardModal.html')">Print temporary ID Card</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</section>
+	
+	<!-- START - Modal Window Placeholder -->
+	<div class="modal fade" id="newEnrollment-modal-window">
+		
+	</div>
+	<!-- END - Modal Window Placeholder -->
+	
+	<footer class="prelogin">
+		<div class="wrapper">
+			<div class="pull-left">
+				&copy; 2015 Aldera.com
+			</div>
+			<div class="pull-right">
+				<a href="#">Privacy Statement</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+   
+   <script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>	
+
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script src="js/newEnrollment.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - New Enrollment</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet" />
+	<link href="css/newenrollment.css" rel="stylesheet" />
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/responsive.css" rel="stylesheet" />
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+	
+  </head>
+  <body class="fade-in one">
+    
+	<header class="prelogin">
+		<div class="wrapper">
+			<div class="logo pull-left"></div>
+			<div class="info pull-right">
+				<div class="support">
+					<i class="glyphicon glyphicon-earphone"></i> 24/7 Customer Support
+					<span>1-800-555-4321</span>
+				</div>
+				<select id="locale">
+					<option value="english">English</option>
+					<option value="spanish" selected>Spanish</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+	</header>
+	
+	<section class="mp-newEnrollment">
+		<div class="wrapper">
+			<div class="enroll-subhead">
+				<!-- progressbar -->
+				<ul id="progressbar">
+					<li class="current">New Enrollment</li>
+					<li>Create Your Account</li>
+					<li>Submission Review</li>
+				</ul>
+			</div>
+			<h1 class='custom-form-heading1'>New Enrollment</h1>
+			<form class="enrollment-form p-b-100" method="post" action="newEnrollmentAccount.html">
+				
+				<div class="panel">
+					<div class="panel-body paddingzero">
+						<div class="selected-benefit-plan">
+							<h4>selected plan</h4>
+							<div class='benefitplan-section'>
+								<a href="#">Dental HMO</a>
+								<div class="effective-date">
+									<label>Begin Date</label>									
+									<div class="benefit-datepicker">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="enrollment-personalinfo">
+							<h4>personal info</h4>
+							<div class="row custom-inline-form">
+								<div class="col-md-7 col-sm-12 col-xs-12">												
+									<div class="form-group">
+										<label>First Name</label>
+										<div class="input-group-lg">
+											<input type="text" name="firstname" class="form-control"  />														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Middle Name</label>
+										<span class="optional lighttext-sm">(optional)</span>
+										<div class="input-group-lg">
+											<input type="text" name="middlename" class="form-control"  />														
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row custom-inline-form">
+								<div class="col-md-7 col-sm-12 col-xs-12">												
+									<div class="form-group">
+										<label>Last Name</label>
+										<div class="input-group-lg">
+											<input type="text" name="firstname" class="form-control"  />														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Suffix</label>
+										<span class="optional lighttext-sm">(optional)</span>
+										<div class="input-group-lg">
+											<input type="text" name="middlename" class="form-control"  />														
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 paddingright0">
+									<div class="form-group">
+										<label>Birthday</label>
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>January</option>
+												<option>Febraury</option>
+												<option>March</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<label></label>
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>01</option>
+												<option>02</option>
+												<option>03</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 yearresize">
+									<div class="form-group">
+										<label></label>
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>2013</option>
+												<option>2014</option>
+												<option>2015</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 paddingright0 genderwidth">
+									<div class="form-group">
+										<label>Gender</label>
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Male</option>
+												<option>Female</option>												
+											</select>														
+										</div>
+									</div>	
+								</div>
+								<div class="col-md-7">
+									<label>Social Security Number</label>									
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control three-digit" type="text" /> -
+											<input class="form-control two-digit" type="text" /> -
+											<input class="form-control four-digit" type="text" />
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 paddingright0">
+									<label>Marital Status</label>	
+									<span class="optional lighttext-sm">(optional)</span>	
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Single</option>
+												<option>Married</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<label>Employment Status</label>	
+									<span class="optional lighttext-sm">(optional)</span>	
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Full Time</option>
+												<option>Part Time</option>
+												<option>Self Employed</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 paddingright0">
+									<label>Primary Language</label>										
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>English</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<label>Use of Language - Primary</label>										
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Native Language</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 paddingright0">
+									<label>Secondary Language</label>										
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Spanish</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<label>Use of Language - Secondary</label>										
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Spoken</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 paddingright0">
+									<label>Race/Ethnicity</label>										
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option>Caucasian</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<label>Are you handicapped?</label>										
+									<div class="form-group">
+										<input id="handicap_no" name="handicap" type="radio" checked />
+										<label for="handicap_no">No</label>
+									
+										<input class="" id="handicap_yes" name="handicap" type="radio" />
+										<label for="handicap_yes">Yes</label>
+									</div>										
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-6 paddingright0">
+									<label>Number of ID cards I need</label>											
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option value="01">01</option>
+												<option value="02">02</option>												
+											</select>														
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+
+						<div class="enrollment-residentAddress">
+							<h4>residential address</h4>
+							<div class="row">
+								
+								<div class="col-md-6 paddingright0">
+									<label>Address 1</label>										
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6 paddingright0">
+									<label>Address 2</label>
+									<span class="optional lighttext-sm">(optional)</span>									
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6 paddingright0">
+									<label>City</label>																		
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6 paddingright0">
+									<label>State</label>																	
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox form-control">
+												<option value="">Select</option>
+												<option value="alabama">Alabama</option>												
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-6 paddingright0">
+									<label>ZIP code</label>																		
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="clearfix"></div>
+								
+								<div class="col-md-6">
+									<h4>mailing address</h4>
+									<div class="form-group">										
+										<input class="same-address" id="same_check" for="same_check" type="checkbox" checked />
+										<label for="same_check">Same as residential address</label>
+									</div>
+								</div>
+								
+								<div class="clearfix"></div>
+								
+								<!-- mailing address section -->	
+								
+								<div class="mailing-address">
+									<div class="col-md-6 paddingright0">
+										<label>Address 1</label>										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-6 paddingright0">
+										<label>Address 2</label>
+										<span class="optional lighttext-sm">(optional)</span>									
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-6 paddingright0">
+										<label>City</label>																		
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-6 paddingright0">
+										<label>State</label>																	
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<select class="alderaSelectbox form-control">
+													<option value="">Select</option>
+													<option value="alabama">Alabama</option>												
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-6 paddingright0">
+										<label>ZIP code</label>																		
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									
+								</div>
+
+								<!-- mailing address section -->	
+								
+							</div>
+							
+						</div>
+						
+						<div class="enrollment-phonemail">
+							<h4>Phone and Email</h4>
+							<div class="row">
+								
+								<div class="col-md-6 paddingright0">
+									<label>Home Phone</label>
+									<span class="optional lighttext-sm">(optional)</span>									
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6 paddingright0">
+									<label>Work Phone</label>
+									<span class="optional lighttext-sm">(optional)</span>									
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6 paddingright0">
+									<label>Mobile Phone</label>
+									<span class="optional lighttext-sm">(optional)</span>									
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6 paddingright0">
+									<label>Mobile Carrier</label>
+									<span class="optional lighttext-sm">(optional)</span>									
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<select class="alderaSelectbox" placeholder="Select One...">												
+												<option value="01">01</option>
+												<option value="02">02</option>												
+											</select>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-12 paddingright0">
+									<label>Email Address</label>											
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="broker-info">
+							<h4>Broker Info</h4>
+							<div class="row">
+								<div class="col-md-6 paddingright0">
+									<label>Broker Name</label>											
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control brokername" type="text" />
+											<div data-toggle="modal" data-target="#newEnrollment-modal-window" onclick="openEnrollmentModal('brokerLookupModal.html')" class="lookup-launch">
+												<a class="modalButton" > Lookup a Broker <img src="images/launch-arrow.png" /> </a>												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 paddingright0">
+									<label>Broker Phone</label>											
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 paddingright0">
+									<label>Broker Address</label>											
+									<div class="form-group">										
+										<div class="input-group-lg">
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="enrollment-dependents">
+						
+							<h4>do you have dependents</h4>
+							
+							<p class="dependents-description lighttext-md">if you have dependents that you would like to cover under this plan, you can add them here.</p>
+							
+							<div class="form-group">
+								<input class="enroll_dependents" id="no_dependents" name="enroll_dependents" type="radio" checked />
+								<label for="no_dependents">No, I do not want to add dependents to this plan</label>
+							</div>
+							<div class="form-group">
+								<input class="enroll_dependents" id="yes_dependents" name="enroll_dependents" type="radio" />
+								<label for="yes_dependents">Yes, I'd like to cover my dependents under this plan</label>
+							</div>
+							
+						</div>
+						
+						<div class="dependent_sec">
+							
+							<div class="dependent_details">
+								
+								<div class="dependent-header">
+									<h4 class="pull-left">Dependent 1</h4>
+									<a class="remove-dependent pull-right"><i class="glyphicon glyphicon-remove"></i> Delete</a>
+									<div class="clearfix"></div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 paddingright0">
+										<div class="form-group">
+											<div class="input-group-lg">
+												<label>First Name</label>
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 paddingright0">		
+										<div class="form-group">
+											<div class="input-group-lg">
+												<label>Middle Name</label>
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 paddingright0">		
+										<div class="form-group">
+											<div class="input-group-lg">
+												<label>Last Name</label>
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">
+										<div class="form-group">	
+											<div class="inline-select">	
+												<label>Birthday</label>
+												<div class="dependent-month">
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="01">Jan</option>
+														<option value="02">Feb</option>
+														<option value="02">Mar</option>												
+														<option value="02">Apr</option>
+													</select>
+												</div>
+												<div class="dependent-date">
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="01">01</option>
+														<option value="02">02</option>												
+													</select>
+												</div>
+												<div class="dependent-year">
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="2013">2013</option>
+														<option value="2014">2014</option>												
+														<option value="2015">2015</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">		
+										<div class="form-group">
+											<div class="input-group-lg">
+												<label>Email</label>
+												<input class="form-control" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">	
+										<div class="form-group">
+											<div class="input-group-lg inline-select">	
+												<div class="dependent-gender">
+													<label>Gender</label>
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="01">Male</option>
+														<option value="02">Female</option>												
+													</select>
+												</div>
+												<div class="dependent-relationship">
+													<label>Relationship</label>
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="01">Father</option>
+														<option value="02">Mother</option>
+														<option value="03">Spouse</option>												
+														<option value="04">Daughter</option>
+													</select>
+												</div>										
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">
+										<label>Race/Ethnicity</label>																	
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<select class="alderaSelectbox form-control">
+													<option value="caucasian">caucasian</option>												
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">
+										<label>Primary Language</label>										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<select class="alderaSelectbox form-control">
+													<option>English</option>												
+												</select>														
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">
+										<label>Use of Language - Primary</label>										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<select class="alderaSelectbox form-control">
+													<option>Native Language</option>												
+												</select>														
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">
+										<label>Secondary Language</label>										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<select class="alderaSelectbox form-control">
+													<option>Spanish</option>												
+												</select>														
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 paddingright0">
+										<label>Use of Language - Secondary</label>										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<select class="alderaSelectbox form-control">
+													<option>Spoken</option>												
+												</select>														
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<h4>Residential Address</h4>
+										<div class="form-group">										
+											<input class="same-address" type="checkbox" checked="">
+											<label for="same_address">Use same address you entered for yourself</label>
+										</div>
+									</div>
+									
+									<!-- mailing address section -->	
+								
+									<div class="mailing-address">
+										<div class="col-md-6 paddingright0">
+											<label>Address 1</label>										
+											<div class="form-group">										
+												<div class="input-group-lg">
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-md-6 paddingright0">
+											<label>Address 2</label>
+											<span class="optional lighttext-sm">(optional)</span>									
+											<div class="form-group">										
+												<div class="input-group-lg">
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-md-6 paddingright0">
+											<label>City</label>																		
+											<div class="form-group">										
+												<div class="input-group-lg">
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-md-6 paddingright0">
+											<label>State</label>																	
+											<div class="form-group">										
+												<div class="input-group-lg">
+													<select class="alderaSelectbox form-control">
+														<option value="">Select</option>
+														<option value="alabama">Alabama</option>												
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="col-md-6 paddingright0">
+											<label>ZIP code</label>																		
+											<div class="form-group">										
+												<div class="input-group-lg">
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+										
+									</div>
+
+									<!-- mailing address section -->
+									
+								</div>
+								
+								<div class="clearfix"></div>
+																
+							</div>
+							
+							<div class="add-dependent">
+								<button id="addDependent" class="btn btn-secondary btn-lg dark"><i class="glyphicon glyphicon-plus"></i> Add Another Dependent </button>
+							</div>
+							
+						</div>
+						
+						<div class="enroll-divider"></div>
+						
+						<div class="physician-selection">
+							
+							<h4>Primary Care Physician Selection</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Subscriber</label>
+										<span class="text-field">Evan Ross</span>
+									</div>
+									<div class="form-group">
+										<label>Dependent</label>
+										<span class="text-field">Rebecca Ross</span>
+										<input id="checkbox1" class="same-subscriber" type="checkbox">
+										<label for="checkbox1">Same as Subscriber</label>
+									</div>
+									<div class="form-group">
+										<span class="text-field">Alicia Ross</span>
+										<input id="checkbox2" class="same-subscriber" type="checkbox">
+										<label for="checkbox2">Same as Subscriber</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Provider Name</label>											
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control providername" type="text" />
+												<div data-toggle="modal" data-target="#newEnrollment-modal-window" onclick="openEnrollmentModal('providerLookupModal.html')" class="lookup-launch providerSearch">
+													<a class="modalButton">Lookup a Provider <img src="images/launch-arrow.png" /></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control providername checkbox1" type="text" />	
+												<div data-toggle="modal" data-target="#newEnrollment-modal-window" onclick="openEnrollmentModal('providerLookupModal.html')" class="lookup-launch providerSearch">
+													<a class="modalButton">Lookup a Provider <img src="images/launch-arrow.png" /></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="form-group">										
+										<div class="form-group">										
+											<div class="input-group-lg">
+												<input class="form-control providername checkbox2" type="text" />	
+												<div data-toggle="modal" data-target="#newEnrollment-modal-window" onclick="openEnrollmentModal('providerLookupModal.html')" class="lookup-launch providerSearch">
+													<a class="modalButton">Lookup a Provider <img src="images/launch-arrow.png" /></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="additional-coverage-sec">
+							<div class="coverage-options">
+								<h3>Do you have additional coverage?</h3>
+								<p>If you have coverage outside of < Health Plan >, we will need you to provide us with that information.</p>
+								<label>Select One</label>
+								<div class="form-group">
+									<input class="benefit_coverage" id="no_coverage" name="benefit_coverage" type="radio" checked="">
+									<label for="no_coverage">No, I do not have other coverage</label>
+								</div>
+								<div class="form-group">
+									<input class="benefit_coverage" id="yes_coverage" name="benefit_coverage" type="radio">
+									<label for="yes_coverage">Yes, I have other coverage</label>
+								</div>
+							</div>
+							
+							<div class="coverage-section">
+								
+								<div class="coverage-details">
+									<div class="coverage-header">
+										<h3 class="pull-left">Additional Coverage 1</h3>
+										<a class="remove-coverage pull-right"><i class="glyphicon glyphicon-remove"></i> Delete</a>
+										<div class="clearfix"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Who's Coverage is This?</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="evan">Evan Ross</option>
+													<option value="alicia">Alicia Ross</option>
+													<option value="kim">Kim Ross</option>																										
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Insurer Name</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="bluecross">Blue Cross</option>														
+												</select>
+											</div>
+											<div class="form-group">												
+												<label>Payer Resp. Seq Code</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="secondary">Secondary</option>														
+												</select>
+											</div>
+											<div class="form-group">												
+												<label>Coordination of Benefits (COB) Code</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="secondary">Secondary</option>														
+												</select>
+											</div>
+											<div class="row coverage-date">
+												<div class="col-md-6">
+													<label>COB Begin Date</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<div class="benefit-datepicker">
+														<input class="datepicker" type="text" />
+													</div>
+												</div>
+												<div class="col-md-6">
+													<label>COB End Date</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<div class="benefit-datepicker">
+														<input class="datepicker" type="text" />
+													</div>
+												</div>
+											</div>											
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Policy Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="input-group-lg">
+													<label>Coverage Type</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="medical">Medical</option>														
+													</select>
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Group Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Employee Id Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Social Security Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Mutualy Defined</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="add-coverage">
+									<button id="addCoverage" class="btn btn-secondary btn-lg dark"><i class="glyphicon glyphicon-plus"></i> Add More Coverage </button>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="enroll-divider"></div>
+						
+						<div class="row pull-right">
+							<div class="col-md-12">
+								<div class="enroll-submit">
+									<a href="index.html" class="btn btn-default btn-lg m-t-10">Cancel</a>
+									<input class="btn btn-primary btn-lg m-t-10" type="submit" value="Next"/>
+									<div class="clearfix"></div>		
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</section>
+	
+	<!-- START - Modal Window Placeholder -->
+	<div class="modal fade" id="newEnrollment-modal-window">
+		
+	</div>
+	<!-- END - Modal Window Placeholder -->
+	
+	<footer class="prelogin">
+		<div class="wrapper">
+			<div class="pull-left">
+				&copy; 2015 Aldera.com
+			</div>
+			<div class="pull-right">
+				<a href="#">Privacy Statement</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+   
+   <script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>	
+
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script src="js/newEnrollment.js"></script>
+
+  </body>
+</html>

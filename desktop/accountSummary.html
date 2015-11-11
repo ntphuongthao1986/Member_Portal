@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Account Summary</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	<link href="css/accountSummary.css" rel="stylesheet">
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/claimresponsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- DataTables -->
+	<link href="css/datatables.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one">
+  
+	<header class="main-header">
+		<div class="wrapper">
+			
+			<div class="topBar">
+				<div class="info pull-right">
+					<a class="message-link" href="#"><span class="badge">4</span><i class="glyphicon glyphicon-envelope"></i></a>
+					<select id="locale">
+						<option value="english">English</option>
+						<option value="spanish" selected>Spanish</option>
+					</select>
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						  Welcome, Evan! <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">						  
+						  <li><a href="#">Account Settings</a></li>
+						  <li><a href="index.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="menuBar">
+				<div class="logo pull-left"></div>
+				<ul class="menu">		
+					<li class="dropdown">      <!-- First level Menu -->
+						<a href="overview.html">Overview</a>						
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Claims & Benefits</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="claims.html">Claims</a></li>
+						  <li><a href="#">Authorizations</a></li>
+						  <li><a href="benefits.html">Benefits</a></li>	
+						  <li><a href="#">View / Print ID Card</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >My Profile</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->						  				
+						  <li><a href="basicInfo.html">Evan Ross</a></li>
+						  <li><a href="basicInfo.html">Rebecca Ross</a></li>
+						  <li><a href="basicInfo.html">Alicia Ross</a></li>
+						  <li><a href="basicInfo.html">Kim Ross</a></li>
+						  <li>
+							<a class="add-dependent" href="index.html">								
+								<i class="glyphicon glyphicon-plus"></i> Add a dependent
+							</a>
+						  </li>						  
+						</ul>
+					</li>
+					<li><a href="#">News & Events</a></li>
+					<li class="dropdown"> 		<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Help & Support</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="#">Contact Us</a></li>
+						  <li><a href="#">FAQ</a></li>						  
+						  <li><a href="#">Forms & Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="findProviderPostlogin.html"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="collapse-menu-icon">
+				<img src="images/collapse-nav-icon.png" />
+			</div>
+			
+			<h1 class="pageTitle benefitsTitle">Account Summary</h1>
+			
+			<h4 class="pageFilter">History</h4>
+			
+		</div>		
+	</header>
+	
+	<!-- Collapse Nav bar -->
+	
+	<nav>
+		<ul>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-road"></i> Overview</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Mission & Vision</a></li>
+					<li><a href="#">Founders</a></li>
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-lock"></i> Claims & Benefits</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Member Benefit maintenance</a></li>					
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-info-sign"></i> My Info</a>
+				<ul class="second-level-menu">
+					<li><a href="#">My Health Plan</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-tag"></i> News & Events</a></li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-question-sign"></i> Help & Support</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Customer Service</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+			<li><a href="index.html"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+		</ul>
+	</nav>
+	
+	<!--/ Collapse Nav bar -->
+	
+	<section class="mp-accountSummary">
+	
+		<div class="wrapper">
+		
+			<div class="row">
+			
+			<div class="col-md-12">
+			
+				<div class="tab-menu">
+					<ul>
+						<li data-href="whitaker" class="active">Whitaker Construction</li>
+						<li data-href="verilet">Verilet</li>					
+					</ul>				
+				</div>
+				
+				<div class="acctsummary-pane panel">
+				
+					<div class="panel-body">
+					
+						<!-- Tab pane -->
+					
+						<div id="whitaker" class="tab-pane active">
+						
+							<div class="due-section">
+								<div class="row">
+									<div class="col-md-2">
+										<label>Balance as of 09/01/15</label>
+										<div class="thin-amtfield">$1300.00</div>
+									</div>
+									<div class="col-md-1">
+										<span class="math-sign">+</span>
+									</div>
+									<div class="col-md-2">
+										<label>Pending Transaction</label>
+										<div class="thin-amtfield">$200.00</div>
+									</div>
+									<div class="col-md-1">
+										<span class="math-sign">=</span>
+									</div>
+									<div class="col-md-3">
+										<label>Total Premium Amount Due</label>
+										<div class="thick-amtfield">$1500.00</div>
+									</div>
+									<div class="col-md-3">
+										<button class="btn btn-pay btn-lg">Pay Premium</button>
+										<div class="refresh-btn">
+											<a href="">
+												<img src="images/refresh.png" />
+												Manage Auto Pay
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="transaction-history">
+								
+								<div class="transaction-header">
+									<h4 class="pull-left">Transaction history</h4>
+									<div class="pull-right date-range">
+										<label class="date-range-label">View By</label>
+										<div class="selection-type">
+											<select class="alderaSelectbox form-control">
+												<option>Date Range</option>												
+											</select>
+										</div>
+										<div class="datepicker-container">
+											<div class="datepicker-wrap">
+												<input class="datepicker" type="text" />
+											</div>
+										</div>
+										<div class="datepicker-divider">
+											to
+										</div>
+										<div class="datepicker-container">
+											<div class="datepicker-wrap">
+												<input class="datepicker" type="text" />
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="transaction-body">
+								
+									<table id="example" class="table transaction-table table-hover">
+										<thead>
+											<tr>
+												<th></th>
+												<th>Date</th>
+												<th>Transaction</th>
+												<th>Description</th>
+												<th>Amount</th>
+												<th>Balance</th>
+												<th>premium_amount</th>
+												<th>fees</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="details-control"></td>
+												<td>06/10/2015</td>
+												<td>Payment #721</td>
+												<td>Payment for invoice #123</td>
+												<td>-$200.00</td>
+												<td>$1300.00</td>
+												<td>$2</td>
+												<td>$4</td>
+											</tr>
+											<tr>
+												<td class="details-control"></td>
+												<td>06/07/2015</td>
+												<td>Adjustments</td>
+												<td>Adjustment to account</td>
+												<td>$200.00</td>
+												<td>$1500.00</td>
+												<td>$1</td>
+												<td>$9</td>
+											</tr>
+											<tr>
+												<td class="details-control"></td>
+												<td>06/01/2015</td>
+												<td><a href="#">Invoice #721 (view)</a></td>
+												<td>Billing Period 06/01/15 - 06/30/15</td>
+												<td>$650.00</td>
+												<td>$1300.00</td>
+												<td>$7</td>
+												<td>$8</td>
+											</tr>
+											<tr>
+												<td class="details-control"></td>
+												<td>06/01/2015</td>
+												<td><a href="#">Invoice #730 (view)</a></td>
+												<td>Billing Period 05/01/15 - 05/30/15</td>
+												<td>$650.00</td>
+												<td>$650.00</td>
+												<td>$5</td>
+												<td>$6</td>
+											</tr>											
+										</tbody>								 										
+									</table>
+								
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<!-- Tab pane -->
+						
+						<div id="verilet" class="tab-pane">
+						
+							Verilet data
+						
+						</div>
+					
+					</div>
+				
+				</div>
+				
+			</div>
+
+			</div>	
+			
+		</div>
+	
+	</section>
+	
+	<!-- Modals -->
+	
+	<div class="modal fade invoice-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close-btn.png" /></button>
+					<h2 class="modal-title" id="lookupLabel">Invoice #1110002</h2>
+				  </div>
+				  <div class="modal-body">
+					
+						<div class="invoice-tools">
+							<button class="btn btn-default pull-right"><img src="images/print.png" /> Print</button>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="row address-wrap">
+							<div class="col-md-7">
+								<div class="invoice-address">
+									<label>Pay To</label>
+									<div class="pay-to">
+										<h4>Acme Healthcare</h4>
+										<address>	
+											201 N Valencia St
+											San Diego, Ca 92130
+										</address>
+									</div>
+								</div>
+								<div class="invoice-address">
+									<label>Billed To</label>
+									<div class="billed-to">
+										<h4>Acme Healthcare</h4>
+										<address>	
+											201 N Valencia St
+											San Diego, Ca 92130
+										</address>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<h3>Invoice #1110002</h3>
+								<table class="invoice-details-table">
+									<tr>
+										<td><label>Invoice Date</label></td>
+										<td>06/30/2015</td>
+									</tr>
+									<tr>
+										<td><label>Billing cycle</label></td>
+										<td>06/01/15 - 06/30/15</td>
+									</tr>
+									<tr>
+										<td><label>Amount</label></td>
+										<td>$6,295.45</td>
+									</tr>
+									<tr>
+										<td><label>Payment Due</label></td>
+										<td>07/15/2015</td>
+									</tr>
+									<tr>
+										<td><label>Employer No.</label></td>
+										<td>60000000-04</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						
+						<div class="invoice-premiums">
+							<h3>Premiums</h3>
+							<table class="table">
+								<tr>
+									<th>Plan</th>
+									<th>Coverage Effective Date</th>
+									<th>Billing Cycle</th>
+									<th>No. of Months</th>
+									<th>Coverage Level</th>
+									<th>Dependents Covered</th>
+									<th>Premium Amount</th>
+									<th>Admin Fee</th>
+									<th>Surcharge Amount</th>
+									<th>APTC Amount</th>
+									<th>Total</th>
+								</tr>
+								<tr>
+									<td>HMO</td>
+									<td>01/08/08</td>
+									<td>06/01/15 - 06/30/15</td>
+									<td>1</td>
+									<td>Family</td>
+									<td>4</td>
+									<td>$485.95</td>
+									<td>$1.00</td>
+									<td>$0.50</td>
+									<td>$0.00</td>
+									<td>$487.45</td>
+								</tr>
+								<tr class="table-total">
+									<td>Totals</td>
+									<td colspan="4"></td>
+									<td>4</td>
+									<td>$485.95</td>
+									<td>$1.00</td>
+									<td>$0.50</td>
+									<td>$0.00</td>
+									<td>$487.45</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="invoice-adjustments">
+							<h3>Adjustments</h3>
+							<table class="table">
+								<tr>
+									<th>Plan</th>
+									<th>Adjustment Effective Date</th>
+									<th>Adjustment End Date</th>
+									<th>No. of Months</th>
+									<th>Coverage Level</th>
+									<th>Adjustment Reason</th>
+									<th>Adjustment Amount</th>
+									<th>Admin Fee</th>
+									<th>Surcharge Amount</th>									
+									<th>Total</th>
+								</tr>
+								<tr>
+									<td>HMO</td>
+									<td>06/30/15</td>
+									<td>06/30/15</td>
+									<td>1</td>
+									<td>Family</td>
+									<td>CS</td>
+									<td>$350.00</td>
+									<td>$1.00</td>
+									<td>$0.50</td>									
+									<td>$351.50</td>
+								</tr>
+								<tr class="table-total">
+									<td>Totals</td>
+									<td colspan="5"></td>
+									<td>$350.00</td>
+									<td>$1.00</td>
+									<td>$0.50</td>									
+									<td>$351.50</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="invoice-summary">
+							<div class="row">
+								<div class="col-md-5">
+									<h3>Comments</h3>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+									</p>
+								</div>
+								<div class="col-md-6 col-md-offset-1">
+									<div class="invoice-totals">
+										<h3>Totals</h3>
+										<table class="table">
+											<tr>
+												<td>Previous Balance</td>
+												<td>$20,251.75</td>
+											</tr>
+											<tr>
+												<td>Amount Paid</td>
+												<td>$16,255.75</td>
+											</tr>
+											<tr class="table-total">
+												<td>Balance Forward</td>
+												<td>$16,255.75</td>
+											</tr>
+										</table>
+									</div>
+									<div class="invoice-billingperiod-totals">
+										<h3>Current Billing Period</h3>
+										<table class="table">
+											<tr>
+												<td>Total Premium Amount</td>
+												<td>$485.95</td>
+											</tr>
+											<tr>
+												<td>Total Member Based Admin Fees</td>
+												<td>$1.00</td>
+											</tr>
+											<tr >
+												<td>Total Member Based Other Fees</td>
+												<td>$0.50</td>
+											</tr>
+											<tr >
+												<td>Administration Fee</td>
+												<td>$12.00</td>
+											</tr>
+											<tr >
+												<td>Total Miscellaneous Fees</td>
+												<td>$0.00</td>
+											</tr>
+											<tr>
+												<td>Total APTC Amount</td>
+												<td>$0.00</td>
+											</tr>
+											<tr class="table-total">
+												<td>Current Premium & Fees</td>
+												<td>$499.45</td>
+											</tr>
+											<tr class="table-total">
+												<td>Total Adjustments</td>
+												<td>$351.50</td>
+											</tr>
+											<tr class="table-total">
+												<td><h3>Please Pay This Amount</h3></td>
+												<td><h3>$850.95</h3></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+				  </div>		  				  
+			
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal End -->
+	
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="support">
+						24 / 7 Customer Support<br>
+						<span><i class="glyphicon glyphicon-earphone"></i> 1-800-555-4321</span>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<a href="#"><div class="help-btn">
+						Questions? We're here to help!
+					</div></a>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="copyright">
+						&copy; 2015 Aldera.com 
+						<a href="#">Privacy Statement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- DataTables -->
+	<script src="js/datatables.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/jqueryknob.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script>
+	
+		/* Formatting function for current billing details row */
+		function format ( d ) {
+			// `d` is the original data object for the row
+				return 	'<div class="billing-section">'+
+							'<h4>Current Billing Period</h4>'+
+							'<div class="row">'+
+								'<div class="col-md-5">'+								
+									'<table class="billingdetail-table">'+
+										
+										'<tbody>'+
+										'<tr>'+
+											'<td>Premium Amount</td><td>'+d.premium_amount+'</td>'+
+										'<tr>'+
+										'<tr>'+
+											'<td>Fees</td><td>'+d.fees+'</td>'+
+										'<tr>'+
+										'</tbody>'+
+										
+										'<tbody class="table-topborder">'+
+										'<tr>'+
+											'<td>Current Premium & Fees</td><td>=$650.00</td>'+
+										'<tr>'+
+										'<tr>'+
+											'<td>Adjustments</td><td>+$0.00</td>'+
+										'<tr>'+
+										'</tbody>'+
+										
+										'<tbody class="table-topborder">'+
+										'<tr>'+
+											'<td>Current Billing</td><td>=$650.00</td>'+
+										'<tr>'+
+										'</tbody>'+	
+										
+									'</table>'+
+								'</div>'+
+								'<div class="col-md-4">'+								
+									'<table class="billingdetail-table">'+
+										
+										'<tbody>'+
+										'<tr>'+
+											'<td>Previous Balance</td><td>$650.00</td>'+
+										'<tr>'+
+										'<tr>'+
+											'<td>Amount Paid</td><td>-$0.00</td>'+
+										'<tr>'+
+										'</tbody>'+
+										
+										'<tbody class="table-topborder">'+
+										'<tr>'+
+											'<td>Balance Forward</td><td>=$650.00</td>'+
+										'<tr>'+
+										'<tr>'+
+											'<td>Amount Paid</td><td>-$0.00</td>'+
+										'<tr>'+
+										'</tbody>'+
+										
+										'<tbody class="table-topborder">'+
+										'<tr>'+
+											'<td>Total Amount Due</td><td>='+d.Balance+'</td>'+
+										'<tr>'+
+										'</tbody>'+	
+										
+									'</table>'+
+								'</div>'+
+								'<div class="col-md-3">'+								
+									'<div class="currentBilling-Invoice">'+
+										'<button data-toggle="modal" data-target=".invoice-modal" class="btn btn-secondary btn-lg dark">View Full Invoice</button>'+
+									'</div>'+
+								'</div>'+
+							'</div>'+
+					   '</div>';
+		}
+		
+		$(document).ready(function(){
+		
+			// Initialize datatables
+		
+			// account summary expand functions
+			
+			var table = $('#example').DataTable( {				
+				"columns": [
+					{
+						"className":      'details-control',
+						"orderable":      false,
+						"data":           null,
+						"defaultContent": ''
+					},
+					{ "data": "Date" },
+					{ "data": "Transaction" },
+					{ "data": "Description" },
+					{ "data": "Amount" },
+					{ "data": "Balance" },
+					{
+						"targets": [ 7 ],
+						"data": "premium_amount",
+						"visible": false,
+						"searchable": false
+					},
+					{
+						"targets": [ 8 ],
+						"data": "fees",
+						"visible": false,
+						"searchable": false
+					}
+				],
+				"paging":false,
+				"info":false,
+				"bFilter": false,
+				"bLengthChange": false,
+				"order": [[1, 'asc']]
+			});
+			 
+			// Add event listener for opening and closing details
+			$('#example tbody').on('click', 'td.details-control', function () {
+				var tr = $(this).closest('tr');
+				var row = table.row( tr );
+		 
+				if ( row.child.isShown() ) {
+					// This row is already open - close it
+					row.child.hide();
+					tr.removeClass('shown');
+				}
+				else {
+					// Open this row
+					row.child( format(row.data()) ).show();
+					tr.addClass('shown');
+				}
+			} );
+		
+			/* Custom select initialize */
+	
+			$('.alderaSelectbox').SumoSelect();
+			
+			$(document).on('click','.SumoSelect',function(){
+				$(this).addClass('selectshadow');				
+			});
+			
+			$(document).on('click','.SumoSelect ul li',function(e){
+				$(this).parent().parent().parent().removeClass('selectshadow');
+				e.stopPropagation();
+			});	
+		
+			// Panel menu navigation function
+			
+			$(document).on('click','.tab-menu li',function(){
+				$(this).siblings('.tab-menu li').removeClass('active');
+				$(this).addClass('active');
+				var link = $(this).attr('data-href');
+				$(this).parents().eq(1).siblings('.acctsummary-pane').find('.tab-pane').removeClass('active');				
+				$(this).parents().eq(1).siblings('.acctsummary-pane').find('#'+link+'').addClass('active');
+			});
+			
+			$(document).on('click','.alert .close',function(){
+				$(this).parent().hide();
+			});
+			
+			
+		});		
+		
+	</script>
+
+  </body>
+</html>

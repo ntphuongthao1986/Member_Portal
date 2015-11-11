@@ -1,0 +1,1407 @@
+body{
+	background:#edeeef;
+}
+
+header{
+	width:100%;
+	height:110px;
+	background:#96999d;
+	position:relative;
+}
+
+/* fonts */
+
+@font-face{
+	font-family:'azosansThin';
+	src:url(../fonts/azosans/AzoSans-Thin.otf);
+}
+
+@font-face{
+	font-family:'azosansLight';
+	src:url(../fonts/azosans/AzoSans-Light.otf);
+}
+
+@font-face{
+	font-family:'azosansBold';
+	src:url(../fonts/azosans/AzoSans-Bold.otf);
+}
+
+@font-face{
+	font-family:'azosansRegular';
+	src:url(../fonts/azosans/AzoSans-Regular.otf);
+}
+
+/* fonts end */
+
+/* General */
+
+.wrapper{
+	width:1000px;
+	margin:0 auto;
+}
+
+.logo{
+	width:128px;
+	height:59px;
+	background:url('../images/common/alderalogo.png');
+	background-size:100%;
+	position:relative;
+	top:26px;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.logo img{
+	width:100%;
+	height:100%;
+}
+
+.support{
+	display:inline;
+}
+
+.support img{
+	width:20px;
+	height:20px;
+}
+
+.info{
+	position:relative;
+	top:44px;
+}
+
+.info span{
+	color:#fff;
+}
+
+a:link{color:#96999d; text-decoration:none;}
+a:hover{color:#96999d; text-decoration:none;}
+a:active{color:#96999d; text-decoration:none;}
+a:visited{color:#96999d; text-decoration:underline;}
+
+.btn{
+	font-family:relwayLight;
+}
+
+label{
+	font-family:relwaySemibold;
+	min-height: 16px;
+}
+
+.links a{
+	color:rgba(0,0,0,0.45);
+}
+
+.links a:link, .links a:visited, .links a:active, .links a:hover{
+	font-family:azosansRegular;
+	word-wrap: break-word;
+	color:rgba(0,0,0,0.45);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active{
+	color:#eee!important;
+	position:relative;
+}
+
+#locale{
+	margin-left:40px;
+	border-color:transparent;
+	color:#fff;
+	background: url(../images/dropdown-arrow.png) no-repeat right;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance:none;
+	min-width:70px;	
+}
+
+select#locale option{
+	color:#000;
+}
+
+.focused{
+	border:1px solid #74DAE9!important;
+}
+
+.input-group{
+	border:1px solid rgba(0,0,0,0.20);
+	border-radius: 3px!important;
+}
+
+.input-group input[type='text'], .input-group input[type='password'], .input-group input[type='text']:focus, .input-group input[type='password']:focus{
+	border:0px!important;
+}
+
+.input-group-addon{
+	border:0px!important;
+}
+
+/* General styles end */
+
+
+/* Notice bar */
+
+.noticebar{
+	min-height:70px;
+	height:auto;
+	width:100%;
+	background:#7e7f7f;
+	position:fixed;
+	z-index:10;
+}
+
+.noticebar .messagebox{
+	width:80%;
+	margin:0 auto;
+	color:#fff;
+}
+
+.noticebar .messagebox div{ 
+    margin-top: 2%;
+}
+
+.close-btn{
+	position:absolute;
+	right:20px;
+	top:34%;
+	font-size:1em!important;
+	color:#fff!important;
+	font-weight:bolder;
+	background:none;
+	color:#96999d;
+}
+
+/* Notice bar end */
+
+
+/* forms style */
+
+input[type="text"], input[type="password"], input[type="email"], .input-group-addon{
+	border-color:rgba(0,0,0,0.20);
+	outline:none;
+}
+
+.login-form, .forgot-username, .register-form{
+	margin:0 auto;
+	width:35%;
+}
+
+.login-form{
+	padding-top:13%;
+	padding-bottom:7%;
+}
+
+.login-form input[type="submit"]{
+	margin-top:7px;
+}
+
+.login-form img{
+	height:42px;
+}
+
+.login-form .links{
+	font-size:0.8em;
+	color:#96999d;
+	margin-top:30px;
+	text-align:center;
+}
+
+.links img{
+	margin-bottom:5px;
+}
+
+.login-form a:link{text-decoration:none;}
+
+.input-group-addon{
+	background:#fff;
+	border-left:0px;
+	border-top-right-radius:4px!important;
+	-moz-border-top-right-radius:4px;
+	-webkit-border-top-right-radius:4px;
+}
+
+.input-group-addon a{
+	text-decoration:none;
+	font-weight:200;
+	font-size:14px;
+}
+
+.login-form .input-group input{
+	border-right:0px;
+}
+
+.btn{
+	font-size:1.2em;
+	font-weight:normal;
+	outline:none!important;
+}
+
+.btn-primary{
+	background:#b0b8bb;
+	border:1px solid #b0b8bb;
+	width:100%;
+	border-radius:3px;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-color:#b0b8bb;
+}
+
+.btn-default{
+	background:transparent;
+	border:none;
+	width:100%;
+	color:#96999d;
+}
+
+.btn-default:hover, .btn-default:active{
+	background:transparent!important;
+	border:none;
+	outline:none!important;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.form-group .form-control{
+	border-radius:3px;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	font-weight:normal;
+	font-size:1em;
+}
+
+.forgot-username .form-group, .register-form .form-group{
+	margin-bottom:7px;	
+}
+
+.custom-form-heading1{
+	font-family:relwayThin;
+	color:#96999d;
+	text-align:center;
+	margin:45px 0 30px 0;
+}
+
+.custom-form-heading5{
+	font-family:relwayLight;
+	font-size:1.2em;
+	color:#96999d;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.forgot-username, .register-form{
+	padding:10px 0 75px 0;
+}
+
+.forgot-username label, .register-form label, .enrollRegister-form label{
+	margin-top:10px;
+	color:#96999d;
+	font-size:1em;
+	font-weight:normal;
+}
+
+.username-found{
+	margin:0 auto;
+	width:50%;
+	text-align:center;
+	padding:50px 0 280px 0;
+}
+
+.username-found .btn{
+	width:70%;
+	color:#fff;
+	margin:0 auto;
+}
+
+.register-form .input-group-addon{
+	padding: 9px 16px;
+	border-top-left-radius:3px;
+	-moz-border-top-left-radius:3px;
+	-webkit-border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	-moz-border-bottom-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+}
+
+.enrollRegister-form{
+	width:60%;
+	margin:0 auto;
+	padding:20px 0 100px 0;
+}
+
+.borderRight{
+	border-right:1px solid #ccc;
+}
+
+.enrollRegister-form h5{
+	font-family:relwayLight;
+	font-size:1.3em;
+}
+
+.enrollRegister-form .btn{
+	color:#fff;
+}
+
+.custom-inline-form .col-md-8{
+	padding-right:0px;
+}
+
+.custom-inline-form .col-md-4{
+	padding-left:5px;
+}
+
+.terms-form{
+	height:370px;
+	text-align:center;
+}
+
+.terms-form-div{
+	width:90%;
+	margin:0 auto;
+	height:370px;
+	overflow-y:scroll;
+	padding:0 15px 0 15px;
+	position:relative;
+	bottom:25px;
+}
+
+.terms-form h5, .terms-form p{
+	text-align:left;
+}
+
+.terms-form input{
+	margin:0px auto;
+	width:50%;
+	
+}
+
+.terms-form a{
+	width:50%;
+	margin:0 auto;
+}
+
+/* forms style end */
+
+
+
+/* footer */
+
+footer{
+	height:40px;
+	margin-top:50px;
+	color:#96999d;	
+	border-top:1px solid #96999d;
+	padding-top:10px;
+	background:#edeeef;
+}
+
+footer a:link{text-decoration:underline;}
+
+/* footer end */
+
+/* margins and paddings */
+
+.m-t-9{
+	margin-top:9%;
+}
+
+.m-b-9{
+	margin-bottom:9%;
+}
+
+.m-t-10{
+	margin-top:10px;
+}
+
+.m-t-24{
+	margin-top:24px;
+}
+
+.p-b-100{
+	padding-bottom:100px;
+}
+
+.paddingzero{
+	padding:0px;
+}
+
+/* margins and paddings end */
+
+/* Datepicker */
+
+.ui-datepicker-trigger{
+	position: absolute;
+	left:0px;
+	padding: 11px 16px;
+	cursor:pointer;
+}
+
+.ui-widget-header{
+	border-color:#787c82;
+	background:#96999d;
+}
+
+.ui-datepicker-title{
+	color:#000;
+}
+
+.ui-state-highlight{
+	border-color:#787c82!important;
+	background:#96999d!important;
+	color:#fff!important;
+}
+
+.ui-state-hover{
+	border-color:#787c82!important;
+	background:#96999d!important;
+	color:#fff!important;
+}
+
+.ui-state-active{
+	border-color:#787c82!important;
+	background:#fff!important;
+	color:#000!important;
+}
+
+/* page fade in animation */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.2s;
+  -moz-animation-duration:0.2s;
+  animation-duration:0.2s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/* New enrollment */
+
+/*progressbar*/
+#progressbar {
+	margin-bottom: 80px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+	position:relative;
+	left:-30px;
+}
+#progressbar li {
+	list-style-type: none;
+	color:rgba(0,0,0,0.40);
+	text-transform: uppercase;
+	font-size: 14px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 30px;
+	line-height: 30px;
+	display: block;
+	font-size: 10px;
+	color: rgba(0,0,0,0.70);
+	background: #E5E5E5;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #E5E5E5;
+	position: absolute;
+	left: -50%;
+	top: 15px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after, #progressbar li.current:after{
+	background: #00788B;
+	color: white;
+}
+
+#progressbar li.current:before{
+	background: #FFC72F;
+	color: white;
+}
+
+.enroll-subhead{
+	margin:0px auto;
+	text-align:center;
+	position:relative;
+	top:30px;	
+}
+
+.enrollment-form{
+	width:70%;
+	margin:0 auto;
+}
+
+.enrollment-period, .enrollment-personalinfo, .enrollment-residentAddress, .enrollment-phonemail,
+.enrollment-dependents, .enrollcreate-account, .broker-info, .physician-selection{
+	width:90%;
+	margin:0px auto;
+	padding:45px 100px;
+	border-bottom:1px solid rgba(0,0,0,0.10);
+}
+
+.selected-benefit-plan{
+	width:90%;
+	margin:0px auto;
+	padding:45px 100px 0px 100px;
+	border-bottom:1px solid rgba(0,0,0,0.10);
+}
+
+.enroll-divider{
+	width:90%;
+	margin:0px auto;
+	border-bottom:1px solid rgba(0,0,0,0.10);
+}
+
+.enrollment-period .form-group{
+	margin-bottom:0px;
+}
+
+.paddingright0{
+	padding-right:0px;
+}
+
+.yearresize{
+	padding-left:0px;
+}
+
+.enrollment-form h4{
+	text-transform:uppercase;
+}
+
+.enrollment-form .col-md-7{
+	padding-right:0px;
+}
+
+.benefitplan-section{
+	border-bottom:1px solid rgba(0,0,0,0.10);
+	padding:22px 0px;
+}
+
+.benefitplan-section:last-child{
+	border-bottom:0px;	
+}
+
+.enrollment-form  .coverage-options{
+	width:90%;
+	margin:0px auto;
+	padding:0px 100px 45px 100px;
+}
+
+.lookup-launch{
+	position:relative;
+	top:-3px;
+	left:1px;
+	text-align:center;
+	width:214px;
+	height:31px;
+	background:#F8F8F8;
+	border-bottom-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-bottom-right-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-radius-bottomright:3px;
+	padding:7px 5px 5px 12px;
+	font-size:0.9em;
+	color:#008AE6;
+	display:none;
+	cursor:pointer;
+}
+
+.effective-date .benefit-datepicker{
+	width:250px;
+}
+
+.text-field{
+	font-family:azosansBold;
+	font-size:14px;
+	color:rgba(0,0,0,0.70);
+	line-height:20px;
+	text-align:left;
+	display:block;
+}
+
+.providerSearch{
+	width:197px;
+}
+
+/* Modal */
+
+.modal .modal-content{
+	border-radius:0px;
+}
+
+.common-modal .modal-header{
+	background:#edeeef;
+	color:#848484;
+}
+
+.common-modal .modal-header .modal-title{
+    line-height: 1.42857143;
+    display: inline-block;    
+    width: 95%;
+}
+
+.common-modal .modal-dialog{
+	width:438px;
+}
+
+.common-modal #lookupLabel{
+	text-align:center;
+}
+
+.common-modal label{
+	color:#bfbec2;
+	font-family:relwayLight;
+}
+
+.common-modal .lookup-description{
+	font-family:relwaySemibold;
+	color:#848484;
+	margin-bottom:20px;
+}
+
+.common-modal .modal-body{
+	padding:25px 40px;
+}
+
+.common-modal .modal-body{
+	padding:20px 40px 0px 40px; 
+	height:100%;
+}
+
+.common-modal .search-btn{
+	width:195px;
+	height:42px;
+	margin:20px 0 20px 0;
+}
+
+.common-modal, .common-modal{
+	padding:0px!important;
+}
+
+.common-modal .modal-body{
+	max-height: 481px;
+    margin-bottom: 71px;
+	overflow-y: scroll;
+}
+
+.common-modal .footer{
+	position:absolute;
+	bottom:15px;
+	background:#fff;
+	width:100%;
+	padding:10px 0 10px 0;
+}
+
+.back-btn, .enrollback-btn{
+	position:absolute;
+	cursor:pointer;
+}
+
+.provider .provider-details{
+	display:inline-block;
+	position:relative;
+	left:16px;
+    top: -14px;
+}
+
+.provider .provider-section{
+	border-bottom:1px solid #ccc;
+	padding: 25px 20px 0px 20px;
+}
+
+.provider-org{
+	color:#bebec2;
+}
+
+.provider-lookup-result .modal-body{
+	overflow-y:scroll;
+}
+
+.provider-footer button{
+	width:195px;
+	height:42px;
+}
+
+/* custom radio and check */
+
+input[type="checkbox"]{
+	width:25px;
+}
+
+input[type="radio"]{
+	width: 25px;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+  cursor:pointer;
+}
+
+input[type=checkbox]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -28px;
+  padding-left : 28px;
+  background   : url('../images/check_off.png') no-repeat 0 0;
+  line-height  : 24px;
+}
+
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -28px;
+  padding-left : 28px;
+  background   : url('../images/radio_off.png') no-repeat 0 0;
+  line-height  : 24px;
+}
+
+input[type=checkbox]:not(old):checked + label{
+  background : url('../images/check_on.png') no-repeat 0 0;
+}
+
+input[type=checkbox].disabled:not(old):checked + label{
+  background : url('../images/check_ondisabled.png') no-repeat 0 0;
+  pointer-events:none;
+}
+
+input[type=checkbox].disabled:not(old) + label{
+  background : url('../images/check_offdisabled.png') no-repeat 0 0;
+  pointer-events:none;
+}
+
+input[type=radio]:not(old):checked + label{
+  background : url('../images/radio_on.png') no-repeat 0 0;
+}
+
+input[type=radio].disabled:not(old):checked + label{
+  background   : url('../images/radio_ondisabled.png') no-repeat 0 0;
+  pointer-events:none;
+}
+
+/* custom select */
+
+.SumoSelect{
+	width:100%;
+	cursor:pointer;
+}
+
+/* .SumoSelect:focus .CaptionCont{
+	border:1px solid #74DAE9!important;
+} */
+
+.SumoSelect .CaptionCont span{
+	cursor:pointer!important;
+}
+
+.SumoSelect > .CaptionCont{
+	width:inherit;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	border-color:rgba(0,0,0,0.20)!important;
+	min-height:46px!important;
+}
+
+.SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont{
+	box-shadow:none!important;
+	-webkit-box-shadow:none!important;
+	border-radius:3px!important;
+}
+
+.SumoSelect > .optWrapper > .options > li{
+	cursor:pointer;
+	border-color:transparent!important;
+	height:40px;
+	font-size:14px;
+	color:rgba(0,0,0,0.70);
+	line-height:40px;
+	padding-top:15px!important;
+	font-family:azosansRegular;
+}
+
+.SumoSelect > .optWrapper > .options > li label{
+	font-size:14px!important;
+	color:rgba(0,0,0,0.70)!important;
+}
+
+.SumoSelect > .optWrapper > .options > li:hover{
+	background:#FFC72F!important;
+}
+
+.SumoSelect > .optWrapper.open{
+	top:41px!important;	
+	border-color:transparent!important;
+	box-shadow:0px 5px 13px 0px rgba(0,0,0,0.20);
+}
+
+.SumoSelect > .optWrapper > .options > li.sel{
+	background:#FFC72F!important;
+}
+
+.selectshadow{
+	box-shadow:0px 2px 13px 0px rgba(0,0,0,0.20);
+}
+
+.selectshadow .CaptionCont{
+	border-color:transparent!important;
+}
+
+.optional{
+	float:right;
+	position:relative;
+	top:3px;
+	font-style:italic;
+}
+
+.three-digit{
+	width:28%;
+	display:inline-block;
+}
+
+.two-digit{
+	width:25%;
+	display:inline-block;
+}
+
+.four-digit{
+	width:30%;
+	display:inline-block;
+}
+
+.genderwidth{
+	width:41%;
+}
+
+.enroll-submit{
+	width:250px;
+	margin: 20px 20px 30px 20px;
+}
+
+.enroll-submit a, .enroll-submit .btn{
+	display:inline-block;
+	float:left;
+	width:100px;
+}
+
+.dependents-description:first-letter{
+	text-transform: capitalize;
+	font-weight:bold;
+}
+
+.enrollment-dependents .form-group{
+	margin-bottom:0px;
+}
+
+.enrollment-dependents{
+	border-bottom:0px;
+}
+
+.dependent_sec{
+	position:relative;
+	background:#EDEDED;
+	display:none;
+	margin-bottom:56px;
+	padding:29px 39px;
+}
+
+.dependent-header{
+	margin-bottom:5px;
+}
+
+.dependent-header .remove-dependent{
+	margin-top:10px;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+
+.dependent_details{
+	margin-bottom:29px;
+	border-bottom:1px solid #c3c3c3;
+}
+
+.dependent_sec .add-dependent .btn{
+	margin:0 auto;	
+}
+
+.textfield{
+	width:160px;
+	display:inline-block;
+}
+
+.inline-select{
+	min-width: 270px;
+    display: inline-block;
+	position:relative;
+	top:5px;
+}
+
+.inline-select label{
+	display:block;
+}
+
+.inline-select .SumoSelect{
+	margin-right:5px;
+}
+
+.inline-select .dependent-month{
+	width:90px;
+	display:inline-block;
+}
+
+.inline-select .dependent-date{
+	width:60px;
+	display:inline-block;
+}
+
+.inline-select .dependent-year{
+	width:90px;
+	display:inline-block;
+}
+
+.inline-select .dependent-relationship{
+	width:112px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.inline-select .dependent-gender{
+	width:110px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.inline-select .dependent-idnums{
+	width:178px;
+	display:inline-block;
+}
+
+/* mailing address section */
+
+.mailing-address{
+	display:none;
+}
+
+.mailing-address.active{
+	display:block;
+}
+
+/* Benefits selection screen */
+
+.benefit-form .panel-body{
+	padding:0px;
+	position:relative;
+}
+
+.benefits-list{
+	padding:37px 40px 0px 40px;
+}
+
+.coverage-options{
+	padding:0px 40px 37px 40px;
+}
+
+.benefit-description{
+	text-align:center;
+	width:70%;
+	margin:28px auto;
+	position:relative;
+	bottom:18px;
+}
+
+.benefits-list .benefits-list-head{
+	font-family:azosansBold;
+	font-size:12px;
+	color:rgba(0,0,0,0.45);
+	line-height:15px;
+	text-align:left;
+	font-weight:normal;
+	border-top:0px!important;
+}
+
+.benefits-list .row{
+	padding:15px 0px!important;
+	border-bottom:1px solid #ddd;
+}
+
+.benefits-list .col-md-1{
+	width:6.333333%!important;
+}
+
+.benefits-list .row .col-md-2:nth-child(2){
+	width:20.666667%;
+}
+
+.benefits-list .benefit-datepicker img{
+	top:4px;
+}
+
+.benefit-selectbox{
+	position:relative;
+	top:10px;
+	left:5px;
+}
+
+.policy-benefits{
+	font-weight:bold;
+}
+
+.benefit-datepicker{
+	border:1px solid rgba(0,0,0,0.20);
+	padding:11px 10px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	width:150px;
+	position:relative;
+}
+
+.benefit-datepicker img{
+	left: -5px;
+    top: 2px;
+}
+
+.benefit-datepicker input{
+	margin-left: 26px;
+	border:0px!important;
+	background:transparent!important;
+	width:60%;
+}
+
+.benefit-datepicker .datepicker:focus{
+	border:0px!important;	
+}
+
+.benefit-datepicker.disabled, .SumoSelect.disabled{
+	pointer-events:none;
+	background:#E6E9EB;
+	opacity:0.5;
+}
+
+.SumoSelect.disabled .SlectBox{
+	background:#E6E9EB;
+}
+
+.benefit-providerName{
+	width:200px;
+}
+
+.additional-coverage-sec{
+	margin:40px 0px 0px 0px;
+}
+
+.additional-coverage-sec .form-group{
+	margin-bottom:0px;
+}
+
+.additional-coverage-sec h3{
+	text-transform:uppercase;
+	font-size:14px!important;
+}
+
+.benefit-controls{
+	position:relative;
+	margin:0px 40px 37px 40px;
+	padding-top:35px;
+	border-top:1px solid #ddd;
+}
+
+.benefit-controls .btn{
+	display:inline-block!important;
+	width:auto;
+	min-width:100px;
+	margin:0px 5px 0px 0px!important;
+}
+
+.dependents-section{
+	background:#E6E9EB;
+	margin:16px 0px;
+	padding:21px 21px;
+	display:none;
+}
+
+.dependents-section .form-group{
+	margin-bottom:0px;
+}
+
+.dependents-section .form-group label{
+	padding-left:50px;
+	font-family:azosansBold!important;
+	font-size:14px!important;
+}
+
+.coverage-section{
+	background:#EDEDED;
+	width:100%;
+	padding:20px 40px;
+	margin-bottom:40px;
+	display:none;
+}
+
+.coverage-header .remove-coverage{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.coverage-details{
+	padding-bottom:30px;
+	border-bottom:1px solid #ddd;
+}
+
+.coverage-details .benefit-datepicker{
+	width:125px;
+	background:#ffffff;
+}
+
+.coverage-details .form-group{
+	margin-bottom:15px;
+}
+
+.coverage-details .benefit-datepicker input{
+	width: 74%;
+}
+
+.coverage-date label{
+	width:65px;
+}
+
+.add-coverage{
+	margin-top:32px;
+}
+
+.add-coverage .btn{
+	margin:0 auto;
+}
+
+.enrollcreate-account{
+	border:0px;
+}
+
+.account-preferences h3{
+	text-transform:uppercase;
+}
+
+.account-preferences .form-group{
+	margin-bottom:0px;
+}
+
+.account-preferences label{
+	width:90%;
+	font-size:14px!important;
+}
+
+.account-preferences .form-group{
+	position:relative;
+	border-bottom:1px solid rgba(0,0,0,0.20);
+	margin-top:15px;
+	padding-bottom:10px;
+}
+
+.account-preferences .form-group:last-child{
+	border-bottom:0px;
+}
+
+.checkbox-group input[type="checkbox"]{
+	position:absolute;
+	right:0px;
+}
+
+.checkbox-group{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:0px;
+}
+
+/* Review screen style */
+
+.enrollreview-description{
+	text-align:center;
+	margin-bottom:50px;
+}
+
+.review-form{
+	width: 95%;
+    margin: 0 auto;
+}
+
+.review-form .panel{
+	margin-bottom:10px;
+}
+
+.review-form .panel-body{
+	padding:0px;
+}
+
+.review-form .panel-body h3{
+	margin:35px 35px 0px -15px;
+}
+
+.review-form .panel-body a{
+	margin:35px 35px 0px -15px;
+}
+
+.review-section{
+	border-bottom:1px solid #eee;
+	padding:15px 60px 40px 60px;
+}
+
+.review-section h4{
+	text-transform:uppercase;
+}
+
+.review-section p{
+	margin:0px;
+}
+
+.review-section .row{
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+
+.review-section .row:last-child{
+	border:0px;
+}
+
+.review-form .benefit-controls{
+	border:0px;
+}
+
+.selectedPlan{
+	text-align:left;
+}
+
+.selectedPlan.review-section{
+	padding-bottom:20px;
+}
+
+.selectedPlan a{
+	margin-left:0px!important;
+}
+
+.width21{
+	width:21%;
+}
+
+.width20{
+	width:20%;
+}
+
+.premium-table{
+	float:right;
+}
+
+.premium-table label{
+	width:150px;
+}
+
+.premium-table .text-field{
+	display:inline-block;
+	width:200px;
+}
+
+.premium-table .text-field a{
+	margin-left:0px;	
+}
+
+.premium-table .total-section{
+	padding-top:15px;
+	border-top:2px solid rgba(0,0,0,0.20);
+}
+
+/* Enroll Submitted */
+
+.enroll-submitted .panel-body{
+	padding:34px 34px;
+	position:relative;
+}
+
+.enroll-submitted .login-section{
+	text-align:center;
+	padding:0px 54px;
+}
+
+.enroll-submitted .printcard-section{
+	text-align:center;
+	padding:0px 54px;
+}
+
+.login-section h4, .printcard-section h4{
+	margin-top:30px;
+	text-transform:uppercase;
+}
+
+.vertical-divider{
+    position:absolute;
+    left:50%;
+    top:20%;
+    bottom:20%;
+    border-left:1px solid rgba(0,0,0,0.10);
+}
+
+.login-section p, .printcard-section p{
+	color:rgba(0,0,0,0.50);	
+	font-weight:bold;
+	margin-top:25px;
+	min-height:100px;
+}
+
+.enroll-submitted .btn-wrap{
+	width:200px;
+	margin:0 auto;
+}
+
+.printId{
+	display:block;
+	float:right;
+}	
+
+.id-container{
+	display:block;
+	margin-top:20px;
+}
+
+.id-container img{
+	width:100%;
+}	
+
+/* fix for firefox scrollbar */
+
+html,body,.modal{
+	overflow:hidden!important;
+}

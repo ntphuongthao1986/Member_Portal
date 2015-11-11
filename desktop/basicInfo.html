@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Basic Info</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	<link href="css/myInfo.css" rel="stylesheet">
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/claimresponsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+		
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- DataTables -->
+	<link href="css/datatables.css" rel="stylesheet">
+	
+	<!-- Theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one">
+  
+    
+	<header class="main-header">
+		<div class="wrapper">
+			
+			<div class="topBar">
+				<div class="info pull-right">
+					<a class="message-link" href="#"><span class="badge">4</span><i class="glyphicon glyphicon-envelope"></i></a>
+					<select id="locale">
+						<option value="english">English</option>
+						<option value="spanish" selected>Spanish</option>
+					</select>
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						  Welcome, Evan! <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">						  
+						  <li><a href="#">Account Settings</a></li>
+						  <li><a href="index.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="menuBar">
+				<div class="logo pull-left"></div>
+				<ul class="menu">		
+					<li class="dropdown">      <!-- First level Menu -->
+						<a href="overview.html">Overview</a>						
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Claims & Benefits</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="claims.html">Claims</a></li>
+						  <li><a href="#">Authorizations</a></li>
+						  <li><a href="benefits.html">Benefits</a></li>	
+						  <li><a href="#">View / Print ID Card</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >My Profile</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->						  				
+						  <li><a href="basicInfo.html">Evan Ross</a></li>
+						  <li><a href="basicInfo.html">Rebecca Ross</a></li>
+						  <li><a href="basicInfo.html">Alicia Ross</a></li>
+						  <li><a href="basicInfo.html">Kim Ross</a></li>
+						  <li>
+							<a class="add-dependent" href="index.html">								
+								<i class="glyphicon glyphicon-plus"></i> Add a dependent
+							</a>
+						  </li>						  
+						</ul>
+					</li>
+					<li><a href="#">News & Events</a></li>
+					<li class="dropdown"> 		<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Help & Support</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="#">Contact Us</a></li>
+						  <li><a href="#">FAQ</a></li>						  
+						  <li><a href="#">Forms & Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="findProviderPostlogin.html"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="collapse-menu-icon">
+				<img src="images/collapse-nav-icon.png" />
+			</div>
+			
+			<h1 class="pageTitle">Evan Ross</h1>
+			
+		</div>		
+	</header>
+	
+	<!-- Collapse Nav bar -->
+	
+	<nav>
+		<ul>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-road"></i> Overview</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Mission & Vision</a></li>
+					<li><a href="#">Founders</a></li>
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-lock"></i> Claims & Benefits</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Member Benefit maintenance</a></li>					
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-info-sign"></i> My Info</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Basic Info</a></li>					
+					<li><a href="#">Interventions</a></li>
+					<li><a href="#">Service History</a></li>
+					<li><a href="#">Pending Requests</a></li>
+					<li><a href="#">Activity</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-tag"></i> News & Events</a></li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-question-sign"></i> Help & Support</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Customer Service</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+			<li><a href="index.html"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+		</ul>
+	</nav>
+	
+	<!--/ Collapse Nav bar -->
+	
+	<section class="mp-myinfo">
+	
+		<div class="employer-select">
+
+			<div class="wrapper">
+			
+				<div class="row">
+								
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="form-group">
+							<label>Employer</label>
+							<select class="form-control alderaSelectbox">														
+								<option value="whitaker">Whitaker Construction</option>								
+							</select>
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+	
+		<div class="wrapper">
+			
+			<div class="tab-menu myinfo-tabs">
+				<ul>
+					<li data-toggle="tab" href="#basicInfoPanel" class="active">Basic Info</li>
+					<li data-toggle="tab" href="#interventionsPanel">Interventions</li>
+					<li data-toggle="tab" href="#serviceHistoryPanel">Service History</li>
+					<li data-toggle="tab" href="#pendingRequestPanel">Pending Requests</li>
+					<li data-toggle="tab" href="#activityPanel">Activity</li>
+				</ul>
+				<div class="btn-wrap">
+					<a href="#" class="aldera-btn shareMyInfo-btn"> <img src="images/popup.png" /> Share My Info </a>
+					<div class="shareinfo-panel">
+						<div class="arrow-up"></div>
+						<div class="sub-panel">
+							<div class="sub-panel-header topLeftBorder">
+								<h4>I want to share my</h4>
+							</div>
+							<div class="sub-panel-body">
+								<ul class="share-menu">
+									<li><img src="images/info-icon.png" /><span>All my info</span></li>
+									<li><img src="images/authorization.png" /><span>My Authorizations</span></li>
+									<li><img src="images/claims.png" /><span>My Claims</span></li>
+									<li><img src="images/copays.png" /><span>My Copays & Maximums</span></li>
+									<li><img src="images/servicehistory.png" /><span>My Service History</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sub-panel">
+							<div class="sub-panel-header">
+								<h4>with</h4>
+							</div>
+							<div class="sub-panel-body sharewith-container">
+								<div class="form-group">
+									<input type="checkbox" />
+									<label>Primary Care Provider</label>
+								</div>
+								<div class="form-group">								
+									<input type="checkbox" />
+									<label>Kim Ross</label>
+								</div>
+								<div class="form-group">
+									<input type="checkbox" />
+									<label>Alicia Ross</label>
+								</div>
+								<div class="form-group">
+									<input type="checkbox" />
+									<label>Rebecca Ross</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="basicInfoPanel" class="tab-pane fade in active">
+			
+				<!-- Scenario 1 -->
+			
+				<div class="panel">
+					<div class="panel-body my-idcard">
+						
+						<a data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('viewIdCardModal.html')">
+							<img src="images/creditcarddark.png" />
+							<span>My ID Card</span>
+						</a>
+												
+					</div>
+				</div>
+				
+				<!-- Scenario 2 -->
+				<p>Note: In the scenario where the user needs to
+				see their broker, the above layout will be shown as below. 
+				As a result, the View ID Card tile goes from full width, to half width, 
+				and it gets a little taller too</p>
+				
+				<div class="viewBroker-pane">
+				
+					<div class="row">
+					
+						<div class="col-md-6 p-r-10">
+							<div class="panel view-idcard">
+					
+								<div class="panel-body">
+									<a data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('viewIdCardModal.html')">
+										<img src="images/idcard-lg.png" />
+										<span>View My ID Card</span>
+									</a>
+								</div>
+							
+							</div>
+						</div>
+						
+						<div class="col-md-6 p-l-10">
+							<div class="panel broker-panel">
+								<div class='panel-head'>
+									<h4>My Broker</h4>									
+								</div>
+								<div class="panel-body">
+									
+									<div class="primarycare-title">
+										<a href="#"><h4>St. Johns River Hospital</h4></a>
+										<span>Scripps Network</span>
+									</div>
+									
+									<div class="primarycare-contactinfo">
+								
+										<div class="address">
+											<img src="images/mapmarker.png" />
+											<div class="address-wrap">
+												<span>317, 14th St. Del Mar, Ca 92014</span>
+												<a href="#">Get Directions</a>
+											</div>									
+										</div>
+										
+										<div class="contactno">
+											<img src="images/phone.png" />
+											<span>(858) 616-6312</span>
+										</div>
+									
+									</div>
+									
+								</div>
+							
+							</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				
+				<!-- Scenario 2 end -->
+				
+				<div class="row">
+				
+					<div class="col-md-6 p-r-10">
+						
+						<div class="panel">
+							<div class='panel-head'>
+								<h4>Who's Covered?</h4>
+								<a class="add-depend" data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('addDependentModal.html')"><i class="glyphicon glyphicon-plus"></i> Add Dependent</a>
+							</div>
+							<div class="panel-body who-covered">
+								
+								<table class="table">
+									<thead>
+									  <tr>
+										<th>Name</th>
+										<th>Member ID</th>
+										<th>Terminate Coverage?</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+											<a>Evan Ross</a>
+											<span>Yourself</span>
+										</td>
+										<td class='memberid'>9704532</td>
+										<td class="terminate-btn"><a class="terminate-coverage" data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('planTerminateCoverageModal.html')"><i class="glyphicon glyphicon-remove"></i> Terminate </a></td>
+									  </tr>
+									  <tr>
+										<td>
+											<a>Rebecca Ross</a>
+											<span>Spouse</span>
+										</td>
+										<td class='memberid'>9704533</td>
+										<td class="terminate-btn"><a class="terminate-coverage" data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('planTerminateCoverageModal.html')"><i class="glyphicon glyphicon-remove"></i> Terminate </a></td>
+									  </tr>
+									  <tr>
+										<td>
+											<a>Alicia Ross</a>
+											<span>Child</span>
+										</td>
+										<td class='memberid'>9704534</td>
+										<td class="terminate-btn"><a class="terminate-coverage" data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('planTerminateCoverageModal.html')"><i class="glyphicon glyphicon-remove"></i> Terminate </a></td>
+									  </tr>
+									  <tr>
+										<td>
+											<a>Kim Ross</a>
+											<span>Child</span>
+										</td>
+										<td class='memberid'>9704535</td>
+										<td class="terminate-btn"><a class="terminate-coverage" data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('planTerminateCoverageModal.html')"><i class="glyphicon glyphicon-remove"></i> Terminate </a></td>
+									  </tr>
+									</tbody>
+								</table>
+	  
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="col-md-6 p-l-10">
+						
+						<div class="panel">
+							<div class='panel-head'>
+								<h4>Primary Care Provider</h4>
+								<a href="#">Change</a>
+							</div>
+							<div class="panel-body myinfo-primarycare">
+								
+								<div class="myinfo-map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15554.95592216687!2d77.57646059999999!3d12.92449065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1444123870420" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>	
+								</div>
+								
+								<div class="primarycare-title">
+									<a href="#"><h4>St. Johns River Hospital</h4></a>
+									<span>Scripps Network</span>
+								</div>
+								
+								<div class="primarycare-contactinfo">
+								
+									<div class="address">
+										<img src="images/mapmarker.png" />
+										<div class="address-wrap">
+											<span>317, 14th St. Del Mar, Ca 92014</span>
+											<a href="#">Get Directions</a>
+										</div>									
+									</div>
+									
+									<div class="contactno">
+										<img src="images/phone.png" />
+										<span>(858) 616-6312</span>
+									</div>
+								
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-md-6 p-r-10">
+						
+						<div class="panel myinfo-demographics">
+						
+							<div class="panel-head">
+								<h4>Demographics</h4>
+							</div>
+							<div class="clearfix"></div>
+							<div class="panel-body">
+								
+								<form>
+								
+									<div class="form-group form-inline demographics-dob">
+										<label>Date of Birth</label><br>
+										<select class="form-control alderaSelectbox">
+											<option>January</option>
+											<option>Febraury</option>
+											<option>March</option>
+											<option>April</option>
+											<option>May</option>
+											<option>June</option>
+										</select>
+										<input type="text" name="" class="form-control" required="" />
+										<select class="form-control alderaSelectbox">
+											<option>1985</option>
+											<option>1986</option>
+											<option>1987</option>
+											<option>1988</option>										
+										</select>
+									</div>
+									
+									<div class="form-group">
+										<label>Social Security #</label>
+										<input type="text" name="" class="form-control" required="" />								
+									</div>
+									
+									<div class="form-group">
+										<label>Gender</label>
+										<select class="form-control alderaSelectbox">
+											<option>Male</option>
+											<option>Female</option>										
+										</select>								
+									</div>
+									
+									<div class="form-group">
+										<label>Marital Status</label>
+										<select class="form-control alderaSelectbox">
+											<option>Single</option>
+											<option>Married</option>										
+										</select>								
+									</div>
+									
+									<div class="form-group">
+										<label>Employment Status</label>
+										<select class="form-control alderaSelectbox">
+											<option>Full-time</option>
+											<option>Part-time</option>										
+										</select>								
+									</div>
+									
+									<div class="form-group">
+										<label>Handicapped?</label><br>
+										<input type="radio" />
+										<label>Yes</label>
+										<input type="radio" />									
+										<label>No</label>
+									</div>
+									
+									<div class="col-md-12 btn-wrap">
+									
+										<input class="btn btn-default discard-btn" type="button" value="Discard Changes" disabled />
+										<input class="btn btn-primary" type="submit" value="Save Changes" disabled />
+									
+									</div>
+								
+								</form>
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="col-md-6 p-l-10">
+						
+						<div class="panel myinfo-contactinfo">
+							<div class='panel-head'>
+								<h4>Contact Info</h4>
+							</div>
+							<div class="clearfix"></div>
+							<div class="panel-body my-idcard">
+								
+								<form>
+								
+									<div class="form-group">
+										<label>Address</label>
+										<input type="text" name="" class="form-control" value="4859 Santa Cruz Ave" />								
+										<input type="text" name="" class="form-control"  />
+									</div>	
+									
+									<div class="col-md-6">
+									
+										<div class="form-group">
+											<label>City</label>
+											<input type="text" name="" class="form-control" />									
+										</div>	
+										
+									</div>
+									
+									<div class="col-md-6">
+									
+										<div class="form-group">
+											<label>State</label>
+											<select class="form-control alderaSelectbox">
+												<option>Full-time</option>
+												<option>Part-time</option>										
+											</select>									
+										</div>	
+										
+									</div>
+
+									<div class="col-md-4">
+									
+										<div class="form-group">
+											<label>Zipcode</label>
+											<input type="text" name="" class="form-control" value="92107" />									
+										</div>	
+										
+									</div>
+									
+									<div class="col-md-8">
+									
+										<div class="form-group">
+											<label>Who's Address is This?</label>
+											<select class="form-control alderaSelectbox" multiple="multiple">
+												<option>Evan Ross, Rebecca Ross, Kim Ross</option>
+												<option>Part-time</option>										
+											</select>									
+										</div>	
+										
+									</div>
+									
+									<div class="col-md-6">
+									
+										<div class="form-group">
+											<label>Home Phone</label>
+											<input type="text" name="" class="form-control" value="(559) 431-4421" />									
+										</div>	
+										
+									</div>
+									
+									<div class="col-md-6">
+									
+										<div class="form-group">
+											<label>Work Phone</label>
+											<input type="text" name="" class="form-control" value="(814) 449-3215" />									
+										</div>	
+										
+									</div>
+									
+									<div class="col-md-6">
+									
+										<div class="form-group">
+											<label>Mobile Phone</label>
+											<input type="text" name="" class="form-control" value="(559) 431-4421" />									
+										</div>	
+										
+									</div>
+									
+									<div class="col-md-6">
+									
+										<div class="form-group">
+											<label>Mobile Provider</label>
+											<select class="form-control alderaSelectbox">
+												<option>Sprint</option>
+												<option>Select</option>										
+											</select>									
+										</div>
+									
+									</div>
+									
+									<div class="col-md-12 btn-wrap">
+									
+										<input class="btn btn-default discard-btn" type="button" value="Discard Changes" disabled />
+										<input class="btn btn-primary" type="submit" value="Save Changes" disabled />
+									
+									</div>
+									
+								</form>
+								
+							</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<!-- Basic info panel end -->
+			
+			<div id="interventionsPanel" class="tab-pane fade">
+				
+				<div class="panel">
+				
+					<div class="panel-body">
+						
+						<div class="myinfoPanel-head">
+							<h3 class="pull-left">Interventions</h3>
+							<div class="filter-options pull-right">
+								<div class="label-span">Filter by Date</div>
+								<div class="datepicker-wrap">
+									<input class="datepicker" type="text" />
+								</div>
+								<div class="print-btn">
+									<a href="#" class="btn btn-plain"> <img src="images/print.png" class="mCS_img_loaded"> Print</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						
+						<table class="myinfo-table">
+							<thead>
+								<tr>
+									<th>Intervention</th>
+									<th>Action</th>
+									<th>Prior Event Date</th>
+									<th>Gap Next Due Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<h4>Children and Adolecents</h4>
+										<p>
+											Access to Primary Care Practitioners? Has the patient recieved preventative/ambulatory
+											health services this year?
+										</p>
+									</td>
+									<td>
+										Requested Action
+									</td>
+									<td>
+										11/17/2014
+									</td>
+									<td>
+										02/20/2015
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>Children and Adolecents</h4>
+										<p>
+											Access to Primary Care Practitioners? Has the patient recieved preventative/ambulatory
+											health services this year?
+										</p>
+									</td>
+									<td>
+										Requested Action
+									</td>
+									<td>
+										11/17/2014
+									</td>
+									<td>
+										02/20/2015
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>Children and Adolecents</h4>
+										<p>
+											Access to Primary Care Practitioners? Has the patient recieved preventative/ambulatory
+											health services this year?
+										</p>
+									</td>
+									<td>
+										Requested Action
+									</td>
+									<td>
+										11/17/2014
+									</td>
+									<td>
+										02/20/2015
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			<!-- Interventions End -->
+			
+			<div id="serviceHistoryPanel" class="tab-pane fade">
+				
+				<div class="panel">
+				
+					<div class="panel-body">
+						
+						<div class="myinfoPanel-head">
+							<h3 class="pull-left">Service History</h3>
+							<div class="filter-options pull-right">
+								<div class="export-btn">
+									<button class="btn btn-default"><img src="images/export-btn.png" class="mCS_img_loaded">Export</button>								
+								</div>
+								<div class="print-btn">
+									<a href="#" class="btn btn-plain"> <img src="images/print.png" class="mCS_img_loaded"> Print</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						
+						<table class="myinfo-table">
+							<thead>
+								<tr>
+									<th>Procedure</th>
+									<th>Tooth / Quad / Arch</th>
+									<th>Place of Service</th>
+									<th>Date of Service</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										Oral Surgery Extraction Single Tooth
+									</td>										
+									<td>
+										1-3rd Molar (wisdom tooth)
+									</td>
+									<td>
+										Office
+									</td>
+									<td>
+										09/24/2006
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Advanced Periodontitis
+									</td>
+									<td>
+										1-3rd Molar (wisdom tooth) Entire Oral Cavity
+									</td>
+									<td>
+										Office
+									</td>
+									<td>
+										09/24/2006
+									</td>
+								</tr>								
+							</tbody>
+						</table>
+						
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			<!-- Service History end -->
+			
+			<div id="pendingRequestPanel" class="tab-pane fade">
+				
+				<div class="panel">
+				
+					<div class="panel-body">
+						
+						<div class="myinfoPanel-head">
+							<h3 class="pull-left">Pending Requests</h3>
+							<div class="clearfix"></div>
+						</div>
+						
+						<table id="pendingRequest-table" class="table">
+							<thead>
+							  <tr>
+								<th>Request Type</th>
+								<th>Date Submitted</th>
+								<th>Current Reviewer</th>								
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>
+									<a class="requestDetail-link" data-toggle="modal" data-target="#myinfo-modal-window" onclick="openMyinfoModal('serviceDetailsModal.html')">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>								
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Request ID Card</a>									
+								</td>
+								<td>
+									07/07/15
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Open Enrollment</a>									
+								</td>
+								<td>
+									01/09/13
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Request ID Card</a>									
+								</td>
+								<td>
+									01/08/13
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Request ID Card</a>									
+								</td>
+								<td>
+									01/04/13
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Enroll Member Dependents</a>									
+								</td>
+								<td>
+									01/03/13
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									01/03/13
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Transfer to a new group</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Disenroll Subscriber Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Benefit Selection</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<a href="#">Change Other Coverage</a>									
+								</td>
+								<td>
+									07/07/14
+								</td>
+								<td>
+									Health Plan
+								</td>
+							  </tr>
+							</tbody>
+						  </table>
+						
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			<!-- Pending requests end -->
+			
+			<div id="activityPanel" class="tab-pane fade">
+				
+				<div class="panel">
+				
+					<div class="panel-body">
+						
+						<div class="activity-type">
+						
+							<label>Activity Type</label>
+							<select class="alderaSelectbox">
+								<option>Any</option>
+								<option>Something</option>
+							</select>
+							
+						</div>
+						
+						<div class="date-range">
+
+							<label>Date Range</label>
+							<div class="datepicker-wrap">
+								<input class="datepicker" type="text" />
+							</div>
+							<span>to</span>
+							<div class="datepicker-wrap">
+								<input class="datepicker" type="text" />
+							</div>
+						
+						</div>
+						
+					</div>
+				
+				</div>
+				
+				<div class="panel">
+				
+					<div class="panel-body">
+						
+						Timeline
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<!-- Activity Panel end -->
+			
+		</div>
+	
+	</section>
+	
+	<!-- START - Modal Window Placeholder -->
+	<div class="modal fade" id="myinfo-modal-window">
+		
+	</div>
+	<!-- END - Modal Window Placeholder -->
+	
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="support">
+						24 / 7 Customer Support<br>
+						<span><i class="glyphicon glyphicon-earphone"></i> 1-800-555-4321</span>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<a href="#"><div class="help-btn">
+						Questions? We're here to help!
+					</div></a>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="copyright">
+						&copy; 2015 Aldera.com 
+						<a href="#">Privacy Statement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- DataTables -->
+	<script src="js/datatables.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/jqueryknob.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/myinfo.js"></script>
+
+  </body>
+</html>

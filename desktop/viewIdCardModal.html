@@ -1,0 +1,45 @@
+<div class="modal-dialog viewidcard-modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close-btn.png" /></button>
+			<h4 class="modal-title" id="lookupLabel">My ID Card</h4>
+		</div>
+
+		<div class="modal-body">
+			<h4 class="pull-left">TEMPORARY ID</h4>
+			<a href="#" class="printId"><img src="images/print.png" /> Print</a>
+			<div class="clearfix"></div>
+			<div class="id-container">
+				<img src="images/idcard.jpg" />
+				<img src="images/idcard.jpg" />
+			</div>
+			
+			<!-- id card request Section for myinfo screen -->
+			
+			<div class="idcard-request">
+				<h4 class="pull-left">REQUEST A PERMANENT ID CARD</h4>
+				<div class="row">
+					<div class="col-md-7">
+						<div class="form-group">
+							<select class="form-control alderaSelectbox" placeholder="Please Specify...">
+								<option></option>							
+							</select>								
+						</div>
+					</div>
+					<div class="col-md-5 paddingzero">
+						<button type="submit" class="btn btn-primary btn-lg">Request Your Card</button>	
+					</div>
+				</div>
+			</div>
+			
+			
+		</div> <!-- END of modal-body -->
+		
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('.alderaSelectbox').SumoSelect();
+	});
+</script>

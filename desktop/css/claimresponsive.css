@@ -1,0 +1,592 @@
+@media only screen and (max-width: 1070px){
+	.wrapper{
+		width:93%;
+	}
+	.listView .col-md-12{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	.menu li{
+		font-size:0.9em;
+	}
+	
+	.claimdetails-title .pageTitle{
+		font-size:1.7em;
+	}
+	
+}
+
+@media only screen and (max-width: 1000px){
+	
+	header{
+		height:70px;
+	}
+	
+	.topBar{
+		display:none;
+	}
+	
+	.menuBar{
+		display:none;
+	}
+	
+	.searchBar{	
+		position:absolute;
+		height:100%;
+		top:0px;
+		z-index:2;
+		background:#fff;
+	}
+	
+	.searchBar header{
+		display:block;
+		text-align:center;
+		font-family:relwaySemibold;
+		color:#edeeef;
+		font-size:1.3em;
+		padding-top:25px;
+	}
+	
+	#filter-cancel-btn{
+		cursor:pointer;
+	}
+	
+	.searchBar .lookup-launch{
+		width:99.5%;
+		text-align:center;
+	}
+	
+	.searchBar .custom-datepicker{
+		width:100%!important;
+	}
+	
+	.searchBar .custom-calendar{
+		margin-left:80px;
+	}
+	
+	.searchBar .custom-calendar .arrow-up{
+		margin-left:-80px;
+	}
+	
+	.claimsTool{
+		display:none;
+	}
+	
+	.gridView{
+		display:none!important;
+	}
+	
+	.listView{
+		display:block!important;
+	}
+	
+	.pagination-bar{
+		display:none;
+	}
+	
+	footer{
+		margin-top:-20px;
+		height:auto;
+		padding-top:0px;
+	}
+	
+	footer .copyright{
+		text-align:left;
+		padding:5px 20px 5px 20px;
+		width:100%;
+	}
+	
+	footer .copyright a{
+		float:right;
+	}
+	
+	footer .support, footer .help-btn{
+		display:none;
+	}
+	
+	.pageTitle{
+		margin:0px auto;
+		position:relative;
+		left:11%;
+		top:5px;
+		text-align:center;
+		width: 74%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+		display:inline-block;
+	}
+	
+	.pageFilter{
+		position:absolute;
+		right:15px;
+		top:20px;
+		display:inline-block;
+		color:#edeeef;
+	}
+	
+	.collapse-menu-icon{
+		display:inline-block;
+		color:#fff;
+		border:1px solid transparent;
+		position:absolute;
+		top: 24px;
+	}
+	
+	.collapse-menu-icon:hover, .collapse-menu-icon:active{
+		border:1px solid #ccc;
+		border-radius:3px;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+	}
+	
+	.custom-table-th:nth-child(3),.custom-table-th:nth-child(4),.custom-table-th:nth-child(6),.custom-table-th:nth-child(7){
+		display:none;
+	}
+	
+	.custom-table-td:nth-child(3),.custom-table-td:nth-child(4),.custom-table-td:nth-child(6),.custom-table-td:nth-child(7) {
+		display:none;
+	}
+	
+	.custom-table-th:nth-child(2),.custom-table-td:nth-child(2){
+		float:left;
+	}
+	
+	.custom-table-td, .custom-table-th{
+		width:30%!important;
+		padding:5px 15px;
+		vertical-align:middle;
+	}
+	
+	.custom-table-heading{
+		background:#eee;
+		padding-top:5px;
+		padding-bottom:20px;
+	}
+	
+	.listView .panel-body{
+		padding:0px;
+	}
+	
+	.custom-table{
+		margin-top:-20px;
+	}
+	
+	body{
+		overflow-x:hidden;
+	}
+	
+	.table-pagination{
+		display:block;
+	}
+	
+	/* Modal */
+	
+	#provider-lookup .modal-dialog, #provider-lookup-result .modal-dialog{
+		width:100%;
+		margin:0px;
+	}
+	
+	#provider-lookup .modal-body{
+		overflow-y: scroll!important;
+	}
+	
+	/* Claim details page */
+	
+	.providerSearchBar .col-md-2{
+		width:100%;
+	}
+	
+	.sidepaddingzero{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	.toolsRow{
+		display:none;
+	}
+	
+	.claimdetails-title{
+		border:none;
+		width:50%;
+		text-align:center;
+		margin-top:0px;
+		padding-left:0px;
+	}
+	
+	.claimdetails-title span{
+		display:none;
+	}
+	
+	.claimdetails-title .pageTitle{
+		font-size:1em;
+		color:#fff;
+		font-family:opensansLight;
+		width:100%;
+	}
+	
+	.claimdetails-title h1 span{
+		display:block;
+		color:#fff;
+		font-family:opensansLight;
+		font-size:1.5em;
+	}
+	
+	.allclaimsbtn{
+		top:-5px;
+	}
+	
+	.claimdetails-panel .panel-body{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	.claim-member-details, .claim-amount-details{
+		border-bottom: 10px solid #e0e4e8;
+	}
+	
+	.m-b-43{
+		margin-bottom:43px;
+	}
+	
+	.claim-member-details .row{
+		width: 307px;
+		margin: 0 auto;
+	}
+	
+	.claim-member-details label{
+		width:162px;
+	}
+	
+	.claim-member-details span{
+		display:inline-block;
+	}
+	
+	.servicedetail-desktop{
+		display:none;
+	}
+	
+	.servicedetail-mobile{
+		display:block;
+	}
+	
+	.service-detail-heading{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
+	.servicedetail-mobile-col{
+		border-bottom: 1px solid #e0e4e8;
+		padding:20px 20px 25px 25px;
+	}
+	
+	.servicedetail-mobile-col .claim-date{
+		width:17%;
+		border-right:0px;
+		display:inline-block;
+	}
+	
+	.servicedetail-mobile-col .service-provided-details{
+		display:inline-block;
+		width:80%;
+	}
+	
+	.servicedetail-mobile-col .service-provided-details h4{
+		color:#848484;
+		font-size:1.2em;
+	}
+	
+	.servicedetail-mobile-col .mobile-right-nav{
+		top:65px;
+		right:30px;
+	}
+	
+	.service-provided-details label{
+		color:#bebec2;
+		font-family:opensansLight;
+		margin-bottom:0px;
+	}
+	
+	.service-provided-details span{
+		color:#848484;
+		font-family:opensansSemibold;
+	}
+	
+	.healthplan-col{
+		background:#eee;
+		padding-bottom:30px;
+	}
+	
+	.healthplan-col h5, .patient-col h5{
+		font-family:opensansSemibold;
+		color:#848484;
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	.patient-col{
+		background:#ddd;
+		padding-bottom:30px;
+	}
+	
+	.claim-total-heading{
+		font-family:opensansSemibold;
+		color:#848484;
+		padding:25px 0 25px 35px;
+	}
+	
+	.price-details{
+		padding:0px 20px 40px 20px; 
+	}
+	
+	.price-details label{
+		color:#bebec2;
+		font-family:opensansLight;
+		margin-bottom:0px;
+	}
+	
+	.price-details span{
+		color:#787c82;
+		margin-bottom:10px;
+		display:block;
+	}
+	
+	.service-date{
+		padding-top:30px!important;
+	}
+	
+	.service-date .claim-service-details{
+		padding-top:0px
+	}
+	
+	.service-date .healthplan-col{
+		height:355px;
+	}
+	
+	/* loader position */
+	
+	#nprogress .spinner{
+		left:40%!important;
+	}
+	
+	/* Benefits style */
+	
+	.benefitsTitle{
+		left:16%;
+	}
+	
+	.btn-wrap{
+		display:none;
+	}
+	
+	.benefits-submenu ul li{
+		width:30%;
+	}
+	
+	.benefits-submenu ul li:nth-child(1){
+		margin-right:10px!important;	
+	}
+	
+	.mp-benefits .wrapper{
+		width:100%;
+	}
+	
+	.mp-benefits .benefits-submenu{
+		width:93%;
+		margin:0 auto;
+		font-size:1em;
+	}
+	
+	.mp-benefits .benefits-panel h2{
+		display:none;
+	}
+	
+	.mp-benefits .panel-tools a{
+		display:none;
+	}
+	
+	.mp-benefits .panel-tools{
+		width:100%;
+	}
+	
+	.mp-benefits .benefits-table{
+		margin-top:15px;
+	}
+	
+	#viewcard-btn{
+		display:block;
+		text-align:center;
+	}
+	
+	.benefits-panel .panel-body{
+		padding:0px;
+	}
+	
+	.mp-benefits .benefits-table .benefits-column:first-child{
+		width:45%;
+		font-size:1em;
+		padding-right:10px;
+	}
+	
+	.mp-benefits .benefits-table .benefits-column:nth-child(2){
+		width:55%;
+		font-size:1em;
+	}
+	
+	.mp-benefits #pane1{
+		padding-left:0px;
+	}
+	
+	.individuals-graph, .family-graph{
+		width:100%;
+		padding-bottom:20px;
+	}
+	
+	.nav-pane{
+		height:auto;
+	}
+	
+	#pane1 .circular-bar{
+		width: 48%;
+		display:block;
+		position:relative;
+		margin-top: 20px;
+	}
+	
+	#pane1 .circular-bar-content{
+		position:absolute;
+		left:200px;		
+	}
+	
+	#pane1 .circular-bar span{
+		position:absolute;
+		left:200px;
+		top:10px;
+		display:block;
+		width:100px;
+	}
+	
+	#pane1 .circular-bar-content label{
+		display:inline-block;
+	}
+	
+	#pane1 .circular-bar-content strong{
+		display:inline-block;
+	}
+	
+	#pane1 h4.graph-title{
+		width: 100%;
+		text-align:left;
+		padding-left:15px;
+	}
+	
+	.mp-benefits .bene-details{
+		padding:10px 15px;
+	}
+	
+	.mp-benefits .bene-actions{
+		width:100%;
+		margin-top:20px;
+	}
+	
+	.plan-search-panel .panel-body{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	.plan-search-panel .form-group{
+		width:61%;
+		display:inline-block;
+	}
+	
+	.plan-search-panel form{
+		text-align:center;
+	}
+	
+	#benefits-search .benefits-column:first-child{
+		margin-bottom:10px;
+	}
+	
+	#benefits-search .benefits-column{
+		width:100%;
+		display:block;
+		margin-bottom:15px;
+	}
+	
+	#benefits-search .benefits-column .column-title, #benefits-search .benefits-column .column-data{
+		width:49%;
+		display:inline-block;
+		vertical-align:top;
+	}
+	
+	.benefits-column:last-child{
+		padding-left:0px;
+	}
+	
+	.column-title1{
+		display:inline-block;
+		width:50%;
+	}
+	
+	.column-data{
+		display:inline-block;
+		width:50%;		
+		color:#6b6f72;
+	}
+	
+	.help-icon span{
+		display:none;		
+	}
+	
+	a.help-icon{
+		width:51px;
+	}
+	
+	.help-icon .q-btn{
+		background:transparent;
+		color:#fff;
+		box-shadow:none;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+	}
+	
+	/* Find a Provider */
+	
+	.customSelect{
+		position:relative;
+		width:100%;
+		z-index:999;
+	}
+	
+	.result-wrap{
+		display:none;
+	}
+	
+	.providerSearchBar{
+		padding-right:10px;
+		padding-left:10px;
+		border-bottom:0px;
+	}
+	
+	.providerSearchBar input, .providerSearchBar .selectwrap, .customSelect{
+		height:50px!important;
+	}
+	
+	footer{
+		position:fixed;
+		bottom:0px;
+		background:#fff;
+	}
+	
+	.providerSearchBar button{
+		width:100%;
+		height:55px;
+	}
+	
+	.providerSearchBar button .glyphicon-search{
+		display:inline-block;
+	}
+	
+}

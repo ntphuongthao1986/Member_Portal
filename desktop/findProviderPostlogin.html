@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Find A Provider</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/claimresponsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one">
+  
+    
+	<header class="main-header">
+		<div class="wrapper">
+			
+			<div class="topBar">
+				<div class="info pull-right">
+					<div class="message-menu">
+						<a class="message-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">4</span><i class="glyphicon glyphicon-envelope"></i></a>
+						<ul class="dropdown-menu">
+						  <li>
+							<a href="#">
+								<img src="images/no-image.png" />
+								<p>Evan is due for his 6 month clearing <br> at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a href="#">
+								<img src="images/no-image.png" />
+								<p>Evan is due for his 6 month clearing <br> at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a href="index.html">
+								<img src="images/no-image.png" />
+								<p>Evan is due for his 6 month clearing <br> at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a class="view-all" href="index.html">								
+								See all notifications
+							</a>
+						  </li>
+						</ul>
+					</div>
+					<select id="locale">
+						<option value="english">English</option>
+						<option value="spanish" selected>Spanish</option>
+					</select>
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						  Welcome, Evan! <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">						  
+						  <li><a href="#">Account Settings</a></li>
+						  <li><a href="index.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="menuBar">
+				<div class="logo pull-left"></div>
+				<ul class="menu">		
+					<li class="dropdown">      <!-- First level Menu -->
+						<a href="overview.html">Overview</a>						
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Claims & Benefits</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="claims.html">Claims</a></li>
+						  <li><a href="#">Authorizations</a></li>
+						  <li><a href="benefits.html">Benefits</a></li>	
+						  <li><a href="#">View / Print ID Card</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >My Profile</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->						  				
+						  <li><a href="basicInfo.html">Evan Ross</a></li>
+						  <li><a href="basicInfo.html">Rebecca Ross</a></li>
+						  <li><a href="basicInfo.html">Alicia Ross</a></li>
+						  <li><a href="basicInfo.html">Kim Ross</a></li>
+						  <li>
+							<a class="add-dependent" href="index.html">								
+								<i class="glyphicon glyphicon-plus"></i> Add a dependent
+							</a>
+						  </li>						  
+						</ul>
+					</li>
+					<li><a href="#">News & Events</a></li>
+					<li class="dropdown"> 		<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Help & Support</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="#">Contact Us</a></li>
+						  <li><a href="#">FAQ</a></li>						  
+						  <li><a href="#">Forms & Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="findProviderPostlogin.html"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="collapse-menu-icon">
+				<img src="images/collapse-nav-icon.png" />
+			</div>
+			
+			<h1 class="pageTitle">Find a Provider</h1>
+			
+			<h4 class="pageFilter">Filter</h4>
+			
+		</div>		
+	</header>
+	
+	<section class="mp-findProviderPostlogin">
+	
+		<div class="providerSearchBar">
+		
+			<div class="wrapper">
+				
+				<div class="row">
+				
+					<form action="searchResults.html">
+				
+					<div class="col-md-2 col-sm-12 col-xs-12">
+						<div class="form-group">
+							<label>I need</label>
+							<select class="form-control providerType alderaSelectbox">														
+								<option value="urgent care">Urgent Care</option>
+								<option value="hospital">Hospital</option>
+								<option value="primary care" selected>Primary Care</option>
+								<option value="specialist">Specialist</option>
+								<option value="dentist">Dentist</option>
+								<option value="pharmacy">Pharmacy</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="form-group">
+							<label>In the vicinity of</label>
+							<div class="input-group-md">
+								<input type="text" name="claimNumber" class="form-control" required="" placeholder="Zipcode or Address" />													 	
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="form-group">
+							<label>Name of provider</label>
+							<div class="input-group-md">
+								<input type="text" name="claimNumber" class="form-control" required="" />														
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-2">
+						<button type="submit" class="btn btn-primary ripple">Search</button>
+					</div>
+					
+					</form>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		<div class="result-wrap">
+			<div class="wrapper">
+				<div class="resultpage-description">
+					<h2>Trusted providers. Huge Network.</h2>
+					<p>
+						Our directory puts hundreds of quality healthcare professionals and facilities right at your finger tips.
+						Just let us know who or what you're looking for and we'll help you find it! Start above!
+					</p>			
+				</div>
+			</div>
+		</div>
+	
+	</section>
+	
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="support">
+						24 / 7 Customer Support<br>
+						<span><i class="glyphicon glyphicon-earphone"></i> 1-800-555-4321</span>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<a href="#"><div class="help-btn">
+						Questions? We're here to help!
+					</div></a>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="copyright">
+						&copy; 2015 Aldera.com 
+						<a href="#">Privacy Statement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Modals -->
+	
+	<div class="modal fade" id="provider-lookup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="lookupLabel">Lookup a Provider</h4>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="lookup-description">Fill in any or all of these fields to find a provider you've visited who has filed a claim with us.</h5>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>First Name</label>
+						<div class="input-group-md">
+							<input type="text" name="firstname" class="form-control" required />														
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Last Name</label>
+						<div class="input-group-md">
+							<input type="text" name="lastname" class="form-control" required />														
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Provider Number</label>
+						<div class="input-group-md">
+							<input type="text" name="firstname" class="form-control" required />														
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Phone Number</label>
+						<div class="input-group-md">
+							<input type="text" name="lastname" class="form-control" required />														
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>City</label>
+						<div class="input-group-md">
+							<input type="text" name="firstname" class="form-control" required />														
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>State</label>
+						<div class="input-group-md">
+							<select class="form-control">
+								<option value="">No Preference</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Type</label>
+						<div class="input-group-md">
+							<select class="form-control">
+								<option value="">No Preference</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Network</label>
+						<div class="input-group-md">
+							<select class="form-control">
+								<option value="">No Preference</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		  </div>		  
+		  <div class="searchprovider-footer">
+				<div class="col-md-12 text-center">
+					<input id="search-providers" type="submit" class="btn btn-primary btn-large search-btn" value="Search" />
+				</div>
+		   </div>
+		</div>
+		
+	  </div>
+	</div>
+	
+	<!--/ Provider Lookup modal ends -->	
+	
+	<!-- Lookup result modal -->
+	
+	<div class="modal fade" id="provider-lookup-result" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<img class="back-btn" src="images/backbtn.png" />
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="lookupLabel">Matching Providers</h4>
+		  </div>
+		  <div class="modal-body">
+			
+			<div class="provider">
+				<div class="provider-section">
+					<input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+					<label for="radio-1" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="provider-section">
+					<input id="radio-2" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-2" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="provider-section">
+					<input id="radio-3" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-3" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="provider-section">
+					<input id="radio-4" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-4" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="provider-section">
+					<input id="radio-5" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-5" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>	
+				<div class="provider-section">
+					<input id="radio-6" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-6" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="provider-section">
+					<input id="radio-7" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-7" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="provider-section">
+					<input id="radio-8" class="radio-custom" name="radio-group" type="radio" >
+					<label for="radio-8" class="radio-custom-label">
+						<div class="provider-details">
+							<div class="provider-name">
+								Ronold Aguilar
+							</div>
+							<div class="provider-org">
+								Managed Care Organizations
+							</div>
+						</div>
+					</label>
+				</div>	
+			</div>
+			
+		  </div>
+		  <div class="provider-footer">
+				<button id="provider-select" class="btn btn-primary">Select</button>
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>	
+	
+	<!-- Modals End -->
+	
+	<script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+	<div class="modal-dialog terminate-coverage-modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Terminate Coverage</h3>
+			</div>
+
+			<div class="modal-body">
+				<div class="body-title">Which plan would you like to remove Kim Ross from?</div>
+				<form class="form family-member" role="form">
+					<div class="form-group checkbox">
+						<input type="checkbox" name="member-id" value="member-id"><label>Dental HMO</label>
+					</div>
+					<div class="form-group">
+						<select class="form-control alderaSelectbox" placeholder="Select a qualifying event...">
+							<option></option>							
+						</select>								
+					</div>
+					<div class="form-group checkbox">
+						<input type="checkbox" name="member-id" value="member-id"><label>HMO Gold</label>
+					</div>										
+				</form>
+			</div> <!-- END of modal-body -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="submit" class="btn btn-primary">Request change</button>	
+			</div>
+		</div>
+	</div>
+
+	
+<script>
+	$(document).ready(function(){
+		$('.alderaSelectbox').SumoSelect();
+	});
+</script>

@@ -1,0 +1,122 @@
+@media only screen and (max-width: 480px) {
+	
+	.support{
+		display:none;
+	}
+	
+	.logo{
+		left:35%;
+	}
+	
+	.login-form, .forgot-username, .username-found, .register-form, .enrollRegister-form{
+		width:95%;
+	}
+	
+	.login-form{
+		padding:25% 0 10% 0;
+	}
+	
+	.custom-form-heading1{
+		margin:20px 0 0px 0;
+	}
+	
+	.custom-form-heading5{
+		width:90%;
+		margin:20px auto;
+		text-align:center;
+	}
+	
+	.terms-form{
+		margin:15px 0 15px 0;
+	}
+	
+	.terms-form-div{
+		height:295px;
+	}
+	
+	
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px){
+	
+	.login-form{
+		width:60%;
+	}
+
+}	
+
+@media only screen and (max-width: 1000px){
+	
+	.wrapper{
+		width:100%;
+		padding:0px 10px 0px 10px;
+	}
+	
+	.enrollRegister-form{
+		padding: 20px 0 0 0;
+	}
+	
+	.enrollRegister-form{
+		border-right:0px;
+	}
+	
+	.borderRight{
+		border-right:none;
+	}
+	
+	.borderBottom{
+		border-bottom:1px solid #ccc;
+	}
+	
+	.p-b-50{
+		padding-bottom:50px;
+	}
+	
+	.custom-inline-form .col-md-8{
+		padding-right:15px;
+	}
+
+	.custom-inline-form .col-md-4{
+		padding-left:15px;
+	}
+	
+	.terms-form-div{
+		width:100%;
+	}
+	
+	.terms-form .btn-primary{
+		width:100%;
+	}
+	
+	.terms-form .btn-default{
+		margin-bottom:50px;
+	}
+	
+	.responsive-m-b-35{
+		margin-bottom:35px;
+	}
+	
+	footer{
+		position:fixed;
+		bottom:0px;
+		width:100%;
+	}
+	
+	/* loader position */
+	
+	#nprogress .spinner{
+		right:40%!important;
+	}
+	
+}
+
+@media only screen and (max-width: 780px){
+	.noticebar .messagebox div{
+		padding:10px 15px 10px 15px;
+	}
+	
+	.noticebar{
+		height:130px;
+	}
+	
+}

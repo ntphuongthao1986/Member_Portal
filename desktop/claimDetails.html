@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Claim Details</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	<link href="css/claimsStyle.css" rel="stylesheet">
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/claimresponsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- Theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one"> 
+  
+    
+	<header class="main-header">
+		<div class="wrapper">
+			
+			<div class="topBar">
+				<div class="info pull-right">
+					<a class="message-link" href="#"><span class="badge">4</span><i class="glyphicon glyphicon-envelope"></i></a>
+					<select id="locale">
+						<option value="english">English</option>
+						<option value="spanish" selected>Spanish</option>
+					</select>
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						  Welcome, Evan! <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">						  
+						  <li><a href="#">Account Settings</a></li>
+						  <li><a href="index.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="menuBar">
+				<div class="logo pull-left"></div>
+				<ul class="menu">		
+					<li class="dropdown">      <!-- First level Menu -->
+						<a href="overview.html">Overview</a>						
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Claims & Benefits</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="claims.html">Claims</a></li>
+						  <li><a href="#">Authorizations</a></li>
+						  <li><a href="benefits.html">Benefits</a></li>	
+						  <li><a href="#">View / Print ID Card</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >My Profile</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->						  				
+						  <li><a href="basicInfo.html">Evan Ross</a></li>
+						  <li><a href="basicInfo.html">Rebecca Ross</a></li>
+						  <li><a href="basicInfo.html">Alicia Ross</a></li>
+						  <li><a href="basicInfo.html">Kim Ross</a></li>
+						  <li>
+							<a class="add-dependent" href="index.html">								
+								<i class="glyphicon glyphicon-plus"></i> Add a dependent
+							</a>
+						  </li>						  
+						</ul>
+					</li>
+					<li><a href="#">News & Events</a></li>
+					<li class="dropdown"> 		<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Help & Support</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="#">Contact Us</a></li>
+						  <li><a href="#">FAQ</a></li>						  
+						  <li><a href="#">Forms & Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="findProviderPostlogin.html"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="claimdetails-title">				
+				<h1 class="pageTitle">Claims</h1>
+			</div>
+			
+			
+		</div>		
+	</header>
+	
+	
+	<section class="mp-claimDetails">
+	
+		<div class="wrapper">
+			
+			<!-- Tools -->	
+			
+			<div class="row toolsRow">
+			
+				<div class="col-md-12">
+			
+					<div class="claimdetails-tools">
+						
+						<a href="claims.html">
+							<img src="images/searchbackbtn.png" /> Back to all claims
+						</a>
+						
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<!--/ Tools -->
+			
+			<!-- Claim Details -->
+			
+			<div class="row">
+				
+				<div class="col-md-12 sidepaddingzero">
+				
+					<div class="panel claimdetails-panel">
+						<div class="panel-body">
+							<div class="claim-links">
+								<a href="claims.html">
+									<img src="images/askquestion.png" /> Contact us about this claim
+								</a>	
+								<a href="claims.html">
+									<img src="images/print.png" /> Print
+								</a>	
+							</div>
+							<div class="claim-member-details">
+								<div class="row">
+									<div class="col-md-2">
+										<label>Patient Name</label>
+										<span>Evan Ross</span>
+									</div>
+									
+									<div class="col-md-2">
+										<label>Member ID</label>
+										<span>123456778</span>
+									</div>
+									
+									<div class="col-md-2">
+										<label>Recieved</label>
+										<span>Mar 30, 2015</span>
+									</div>
+									
+									<div class="col-md-2">
+										<label>Processed</label>
+										<span>April 1, 2015</span>
+									</div>
+									
+									<div class="col-md-2">
+										<label>Status</label>
+										<span>Paid</span>
+									</div>
+									
+									<div class="col-md-2">
+										<label>Provider</label>
+										<span>Kearny, Robert</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="claim-amount-details">
+								<div class="row">
+									<div class="col-md-3 col-sm-6 col-xs-6 m-b-43">
+										<label>Amount Billed</label>
+										<span>$2,221.00</span>
+									</div>
+									
+									<div class="col-md-3 col-sm-6 col-xs-6 m-b-43">
+										<label>Amount Allowed</label>
+										<span>$0.00.00</span>
+									</div>
+									
+									<div class="col-md-3 col-sm-6 col-xs-6">
+										<label>Amount We Paid</label>
+										<span>$1,627.34</span>
+									</div>
+									
+									<div class="col-md-3 col-sm-6 col-xs-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">$593.66</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="claim-service-details">
+								
+								<div class="service-detail-heading">
+									<h4>SERVICE DETAILS</h4>
+									<a href="#">
+										<img src="images/eoblink.png" />
+										<span>View Explanation of Benefits</span>
+									</a>
+								</div>
+								
+								<div class="service-detail-body">
+								
+									<!-- Desktop View -->
+									
+									<div class="servicedetail-desktop">
+									
+										<div class="row">
+											<div class="col-md-4 plain-table">
+												
+												<div class="service-table m-t-52">
+													<div class="service-table-head">
+														<div class="col">
+															Date(s) of Service
+														</div>
+														<div class="col">
+															Type of Service / Procedure Code
+														</div>
+														
+													</div>
+													<div class="service-table-body">
+														<div class="col">
+															$1,481.00
+														</div>
+														<div class="col">
+															$1,016.12
+														</div>
+														
+													</div>
+													<div class="service-table-body">
+														<div class="col">
+															$1,481.00
+														</div>
+														<div class="col">
+															$1,016.12
+														</div>
+														
+													</div>
+													<div class="service-table-footer">
+														<div class="col">
+															TOTAL
+														</div>
+														<div class="col">
+															&nbsp;
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-6 health-plan">
+												<h5>< Health Plan Name Here ></h5>
+												<div class="service-table">
+													<div class="service-table-head">
+														<div class="col">
+															Amount Billed
+														</div>
+														<div class="col">
+															Amount Allowed
+														</div>
+														<div class="col">
+															Amount We Paid
+														</div>
+													</div>
+													<div class="service-table-body">
+														<div class="col">
+															$1,481.00
+														</div>
+														<div class="col">
+															$1,016.12
+														</div>
+														<div class="col">
+															$9,999.99
+														</div>
+													</div>
+													<div class="service-table-body">
+														<div class="col">
+															$1,481.00
+														</div>
+														<div class="col">
+															$1,016.12
+														</div>
+														<div class="col">
+															$9,999.99
+														</div>
+													</div>
+													<div class="service-table-footer">
+														<div class="col">
+															$2,221.00
+														</div>
+														<div class="col">
+															$1,627.34
+														</div>
+														<div class="col">
+															$0.00
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4 col-sm-6 col-xs-6 patient-responsibility">
+												<h5>Patient Responsibility</h5>
+												<div class="service-table">
+													<div class="service-table-head">
+														<div class="col">
+															Not Covered
+														</div>
+														<div class="col">
+															Deductible
+														</div>
+														<div class="col">
+															Copay
+														</div>
+													</div>
+													<div class="service-table-body">
+														<div class="col">
+															$0.00
+														</div>
+														<div class="col">
+															$464.88
+														</div>
+														<div class="col">
+															$0.00
+														</div>
+													</div>
+													<div class="service-table-body">
+														<div class="col">
+															$0.00
+														</div>
+														<div class="col">
+															$128.77
+														</div>
+														<div class="col">
+															$0.00
+														</div>
+													</div>
+													<div class="service-table-footer">
+														<div class="col">
+															$0.00
+														</div>
+														<div class="col">
+															$593.66
+														</div>
+														<div class="col">
+															$0.00
+														</div>
+													</div>
+													
+												</div>
+											</div>
+										</div>
+									
+									</div>	
+									
+									<!--/ Desktop View -->
+									
+									<!-- Mobile view -->
+									
+									<div class="servicedetail-mobile">
+										
+										<div class="row">
+											
+											<a href="serviceDetail.html">
+											<div class="col-md-12 servicedetail-mobile-col">
+												<div class="claim-date">
+													<div class="claim-month">
+														MAR
+													</div>
+													<div class="claim-day">
+														30
+													</div>
+													<div class="claim-year">
+														2015
+													</div>
+												</div>
+												<div class="service-provided-details">
+													<h4>Surgical, Performed at office</h4>
+													<label>AMOUNT BILLED :</label>
+													<span>$1,481.00</span><br>
+													<label>DEDUCTIBLE :</label>
+													<span>$464.88</span>
+												</div>
+												<img class="mobile-right-nav" src="images/rightarrow.png">
+											</div>
+											</a>
+											
+											<a href="serviceDetail.html">
+											<div class="col-md-12 servicedetail-mobile-col">
+												<div class="claim-date">
+													<div class="claim-month">
+														MAR
+													</div>
+													<div class="claim-day">
+														30
+													</div>
+													<div class="claim-year">
+														2015
+													</div>
+												</div>
+												<div class="service-provided-details">
+													<h4>Surgical, Performed at office</h4>
+													<label>AMOUNT BILLED :</label>
+													<span>$1,481.00</span><br>
+													<label>DEDUCTIBLE :</label>
+													<span>$464.88</span>
+												</div>
+												<img class="mobile-right-nav" src="images/rightarrow.png">
+											</div>
+											</a>
+											
+											<div class="claim-total-heading">
+												<h4>CLAIM TOTALS</h4>												
+											</div>
+											
+											<div class="col-md-6 col-sm-6 col-xs-6 healthplan-col">
+												<h5>< Health Plan Name ></h5>
+												<div class="price-details">
+													<label>Amount Billed</label>
+													<span>$2,221.00</span>
+												</div>
+												<div class="price-details">
+													<label>Amount Allowed</label>
+													<span>$1,627.34</span>
+												</div>
+												<div class="price-details">
+													<label>Amount We Paid</label>
+													<span>$0.00</span>
+												</div>
+											</div>
+											
+											<div class="col-md-6 col-sm-6 col-xs-6 patient-col">
+												<h5>Patient Responsibility</h5>
+												<div class="price-details">
+													<label>Not Covered</label>
+													<span>$0.00</span>
+												</div>
+												<div class="price-details">
+													<label>Deductible</label>
+													<span>$464.88</span>
+												</div>
+												<div class="price-details">
+													<label>Copay / Coinsurance</label>
+													<span>$0.00</span>
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+									
+									<!--/ Mobile view -->
+									
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			<!--/ Claim Details End-->
+			
+		</div>
+	
+	</section>
+	
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="support">
+						24 / 7 Customer Support<br>
+						<span><i class="glyphicon glyphicon-earphone"></i> 1-800-555-4321</span>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<a href="#"><div class="help-btn">
+						Questions? We're here to help!
+					</div></a>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="copyright">
+						&copy; 2015 Aldera.com 
+						<a href="#">Privacy Statement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+
+  </body>
+</html>

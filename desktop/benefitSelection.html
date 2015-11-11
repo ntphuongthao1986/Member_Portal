@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - New Enrollment</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet" />
+	<link href="css/newenrollment.css" rel="stylesheet" />
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/responsive.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+	
+  </head>
+  <body class="fade-in one">
+    
+	<header class="prelogin">
+		<div class="wrapper">
+			<div class="logo pull-left"></div>
+			<div class="info pull-right">
+				<div class="support">
+					<i class="glyphicon glyphicon-earphone"></i> 24/7 Customer Support
+					<span>1-800-555-4321</span>
+				</div>
+				<select id="locale">
+					<option value="english">English</option>
+					<option value="spanish" selected>Spanish</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+	</header>
+	
+	<section class="mp-benefitSelection">
+		<div class="wrapper">
+			<div class="enroll-subhead">
+				<!-- progressbar -->
+				<ul id="progressbar">
+					<li class="active">New Enrollment</li>
+					<li class="current">Benefit Selection</li>
+					<li>Create Your Account</li>
+				</ul>
+			</div>
+			<h1 class='custom-form-heading1'>Benefit Selection</h1>
+			<div class="clearfix"></div>
+			<p class="benefit-description lighttext-md">
+			These are the benefits available to you through Whitaker Construction. Please select any plans you wish to enroll in.
+			Note that you can always change your Primary Care Provider later.
+			</p>
+			<form class="benefit-form p-b-100" method="post" action="newEnrollmentAccount.html">
+				
+				<div class="panel">
+					<div class="panel-body">
+					
+						<div class="benefits-list">
+							
+							<div class="row benefits-list-head">
+							
+								<div class="col-md-1">
+									<span>Select</span>
+								</div>
+								<div class="col-md-2">
+									<span>Policy Benefits</span>
+								</div>
+								<div class="col-md-2">
+									<span>Begin Coverage On</span>
+								</div>
+								<div class="col-md-2">
+									<span>Provider Name</span>
+								</div>
+								<div class="col-md-2">
+									<span>Provider Effective Date</span>
+								</div>
+								<div class="col-md-2">
+									<span>Already a Patient?</span>
+								</div>
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input class="disabled" id="same_check" for="same_check" type="checkbox" disabled>
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>Dental HMO</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input  id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>Dental PPO</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input  id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>Dental Premium</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input  id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>HMO Standard</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input  id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>POS</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input  id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>PPO Gold</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input  id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>Vision</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+							
+							</div>
+							<div class="row benefit-section">
+							
+								<div class="col-md-1">
+									<div class="form-group benefit-selectbox">										
+										<input id="same_check" for="same_check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="policy-benefits">
+										<a>HMO Gold</a>
+										<div class="lighttext-sm">Effective 01/01/15 - 12/31/15</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-providerName">
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="benefit-datepicker disabled">
+										<input class="datepicker" type="text" />
+									</div>
+								</div>
+								<div class="col-md-2">
+									<select class="alderaSelectbox" placeholder="Select One..." disabled>												
+										<option value="no">No</option>																					
+									</select>
+								</div>
+								
+								<!-- dependents section -->
+								
+								<div class="dependents-section col-md-12">
+									<p class="lighttext-md">Select dependents to add to this plan</p>
+									<div class="form-group">										
+										<input id="dependent1" type="checkbox" >
+										<label for="dependent1">Aaron Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent2" for="same_check" type="checkbox" >
+										<label for="dependent2">Nick Lynch</label>
+									</div>
+									<div class="form-group">										
+										<input id="dependent3" for="same_check" type="checkbox" >
+										<label for="dependent3">Fred Lynch</label>
+									</div>
+								</div>
+								
+								<!-- end -->
+								
+							</div>
+						
+						</div>
+						
+						<div class="additional-coverage-sec">
+							<div class="coverage-options">
+								<h3>Do you have additional coverage?</h3>
+								<p>If you have coverage outside of < Health Plan >, we will need you to provide us with that information.</p>
+								<label>Select One</label>
+								<div class="form-group">
+									<input class="benefit_coverage" id="no_coverage" name="benefit_coverage" type="radio" checked="">
+									<label for="no_coverage">No, I do not have other coverage</label>
+								</div>
+								<div class="form-group">
+									<input class="benefit_coverage" id="yes_coverage" name="benefit_coverage" type="radio">
+									<label for="yes_coverage">Yes, I have other coverage</label>
+								</div>
+							</div>
+							
+							<div class="coverage-section">
+								
+								<div class="coverage-details">
+									<div class="coverage-header">
+										<h3 class="pull-left">Additional Coverage 1</h3>
+										<a class="remove-coverage pull-right"><i class="glyphicon glyphicon-remove"></i> Delete</a>
+										<div class="clearfix"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Who's Coverage is This?</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="evan">Evan Ross</option>
+													<option value="alicia">Alicia Ross</option>
+													<option value="kim">Kim Ross</option>																										
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Insurer Name</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="bluecross">Blue Cross</option>														
+												</select>
+											</div>
+											<div class="form-group">												
+												<label>Payer Resp. Seq Code</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="secondary">Secondary</option>														
+												</select>
+											</div>
+											<div class="form-group">												
+												<label>Coordination of Benefits (COB) Code</label>
+												<select class="alderaSelectbox" placeholder="Select One...">												
+													<option value="secondary">Secondary</option>														
+												</select>
+											</div>
+											<div class="row coverage-date">
+												<div class="col-md-6">
+													<label>COB Begin Date</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<div class="benefit-datepicker">
+														<img src="images/calendar.png" />
+														<input type="text" />
+													</div>
+												</div>
+												<div class="col-md-6">
+													<label>COB End Date</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<div class="benefit-datepicker">
+														<img src="images/calendar.png" />
+														<input type="text" />
+													</div>
+												</div>
+											</div>											
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Policy Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<div class="input-group-lg">
+													<label>Coverage Type</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<select class="alderaSelectbox" placeholder="Select One...">												
+														<option value="medical">Medical</option>														
+													</select>
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Group Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Employee Id Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Social Security Number</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">	
+												<div class="input-group-lg">
+													<label>Mutualy Defined</label>
+													<span class="optional lighttext-sm">(optional)</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="add-coverage">
+									<button id="addCoverage" class="btn btn-secondary btn-lg dark"><i class="glyphicon glyphicon-plus"></i> Add More Coverage </button>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="benefit-controls">
+							<a href="newEnrollment.html" class="btn btn-secondary btn-lg dark pull-left">Back</a>
+							<div class="pull-right">
+								<button class="btn btn-default btn-lg">Cancel</button>
+								<button class="btn btn-primary btn-lg">Next</button>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</section>
+	
+	<footer class="prelogin">
+		<div class="wrapper">
+			<div class="pull-left">
+				&copy; 2015 Aldera.com
+			</div>
+			<div class="pull-right">
+				<a href="#">Privacy Statement</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+   
+   <script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>	
+
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+		
+			/* Custom select initialize */
+	
+			window.asd = $('.alderaSelectbox').SumoSelect({ csvDispCount: 3 });
+			
+			$(document).on('click','.SumoSelect',function(){
+				$(this).addClass('selectshadow');				
+			});
+			
+			$(document).on('click','.SumoSelect ul li',function(e){
+				$(this).parent().parent().parent().removeClass('selectshadow');
+				e.stopPropagation();
+			});	
+			
+			$('.SumoSelect').blur(function(){
+				$(this).removeClass('selectshadow');
+				$('.optWrapper').removeClass('open');
+			});
+
+			// Benefit selection function
+
+			$(document).on('change','.benefit-section input[type="checkbox"]',function(){
+				if($(this).is(":checked")){
+					$(this).parents().eq(1).siblings('.dependents-section').slideDown();
+					$(this).parents().eq(1).siblings().find('.benefit-datepicker').removeClass('disabled');
+					$(this).parents().eq(1).siblings().find('.SumoSelect').removeClass('disabled');					
+					$(this).parents().eq(1).siblings().find('.alderaSelectbox').removeAttr('disabled');					
+				}else{
+					$(this).parents().eq(1).siblings('.dependents-section').slideUp();
+					$(this).parents().eq(1).siblings().find('.benefit-datepicker').addClass('disabled');
+					$(this).parents().eq(1).siblings().find('.SumoSelect').addClass('disabled');
+				}
+			});	
+			
+			$(document).on('change','.benefit_coverage',function(){
+				if($('#yes_coverage').is(':checked')){
+					$('.coverage-section').slideDown();
+				}else{
+					$('.coverage-section').slideUp();
+				}
+			});
+			
+			// add coverage
+			
+			$(document).on('click','#addCoverage',function(e){
+				e.preventDefault();
+				var coverage = $('.coverage-details:first').clone();
+				$(this).parent().before(coverage);
+			});
+			
+			$(document).on('click','.remove-coverage',function(e){
+				e.preventDefault();
+				var coverageSec = $(this).parent().parent();
+				if($('.coverage-section .coverage-details').length != 1){					
+					coverageSec.remove();
+				}
+			});
+			
+			$(function() {
+				$( ".datepicker" ).datepicker({
+				  showOn: "button",
+				  buttonImage: "images/calendar.png",
+				  buttonImageOnly: true,
+				  buttonText: "Select date",
+				  changeMonth: true,
+				  changeYear: true
+				});
+			});
+
+		});
+	
+	</script>
+
+  </body>
+</html>

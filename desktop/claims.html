@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Claims</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Datatables -->
+	<link href="css/datatables.css" rel="stylesheet">
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	<link href="css/claims.css" rel="stylesheet">
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/claimresponsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- jPList Core -->
+	<link href="css/jplist.core.min.css" rel="stylesheet"/>
+	<link href="css/jplist.pagination-bundle.min.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one">
+  
+    
+	<header class="main-header">
+		<div class="wrapper">
+			
+			<div class="topBar">
+				<div class="info pull-right">
+					<div class="message-menu">
+						<a class="message-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">4</span><img src="images/message-btn.png" /></a>
+						<ul class="dropdown-menu">
+						  <li>
+							<a href="#">
+								<img src="images/no-image.png">
+								<p>Evan is due for his 6 month clearing at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a href="#">
+								<img src="images/no-image.png">
+								<p>Evan is due for his 6 month clearing at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a href="index.html">
+								<img src="images/no-image.png">
+								<p>Evan is due for his 6 month clearing at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a href="index.html">
+								<img src="images/no-image.png">
+								<p>Evan is due for his 6 month clearing at Mesa Dental</p>
+							</a>
+						  </li>
+						  <li>
+							<a class="view-all" href="index.html">								
+								See all notifications
+							</a>
+						  </li>
+						</ul>
+					</div>
+					<select id="locale">
+						<option value="english">English</option>
+						<option value="spanish" selected>Spanish</option>
+					</select>
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						  Welcome, Evan! <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">						  
+						  <li><a href="#">Account Settings</a></li>
+						  <li><a href="index.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="menuBar">
+				<div class="logo pull-left"></div>
+				<ul class="menu">		
+					<li class="dropdown">      <!-- First level Menu -->
+						<a href="overview.html">Overview</a>						
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Claims & Benefits</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="claims.html">Claims</a></li>
+						  <li><a href="#">Authorizations</a></li>
+						  <li><a href="benefits.html">Benefits</a></li>	
+						  <li><a href="#">View / Print ID Card</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >My Profile</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->						  				
+						  <li><a href="basicInfo.html">Evan Ross</a></li>
+						  <li><a href="basicInfo.html">Rebecca Ross</a></li>
+						  <li><a href="basicInfo.html">Alicia Ross</a></li>
+						  <li><a href="basicInfo.html">Kim Ross</a></li>
+						  <li>
+							<a class="add-dependent" href="index.html">								
+								<i class="glyphicon glyphicon-plus"></i> Add a dependent
+							</a>
+						  </li>						  
+						</ul>
+					</li>
+					<li><a href="#">News & Events</a></li>
+					<li class="dropdown"> 		<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Help & Support</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="#">Contact Us</a></li>
+						  <li><a href="#">FAQ</a></li>						  
+						  <li><a href="#">Forms & Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="findProviderPostlogin.html"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="collapse-menu-icon">
+				<img src="images/collapse-nav-icon.png" />
+			</div>
+			
+			<h1 class="pageTitle">Claims</h1>
+			
+			<h4 class="pageFilter">Filter</h4>
+			
+		</div>		
+	</header>
+	
+	<!-- Collapse Nav bar -->
+	
+	<nav>
+		<ul>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-road"></i> Overview</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Mission & Vision</a></li>
+					<li><a href="#">Founders</a></li>
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-lock"></i> Claims & Benefits</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Member Benefit maintenance</a></li>					
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-info-sign"></i> My Info</a>
+				<ul class="second-level-menu">
+					<li><a href="#">My Health Plan</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-tag"></i> News & Events</a></li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-question-sign"></i> Help & Support</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Customer Service</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+			<li><a href="index.html"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+		</ul>
+	</nav>
+	
+	<!--/ Collapse Nav bar -->
+	
+	<!-- Filter -->
+	
+	<section class="searchBar mp-claims">
+		<header>
+			<div class="col-sm-4 col-xs-4">
+				<span id="filter-cancel-btn">Cancel</span>
+			</div>
+			<div class="col-sm-4 col-xs-4">
+				Filter
+			</div>
+			<div class="col-sm-4 col-xs-4">
+				Apply
+			</div>
+		</header>
+		<div class="wrapper">
+			<form class="searchForm">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="form-group">
+							<label>Provider Last Name</label>
+							<div class="input-group-md">
+								<input type="text" name="providerLastName" class="form-control providerLastName" required autocomplete="off"/>	
+								<div class="lookup-launch">
+									<a class="modalButton" data-toggle="modal" href="providerLookupModal.html" data-height=320 data-width=450 data-target="#myModal">Lookup a Provider <img src="images/launch-arrow.png" /></a>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label>Claim Number</label>
+							<div class="input-group-md">
+								<input type="text" name="claimNumber" class="form-control" required />														
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label>Type</label>
+							<div class="input-group-md">
+								<select class="form-control" required>														
+									<option>Any</option>
+									<option>Option</option>
+								</select>
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label>Status</label>
+							<div class="input-group-md">
+								<select class="form-control" required>														
+									<option>Any</option>
+									<option>Option</option>
+								</select>
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label>Service Date Range</label>
+							<div class="input-group input-group-md">
+								<span class="input-group-addon"><img src="images/calendar.png" /></span>
+								<div class="form-control display-inline custom-datepicker">
+									<input id="fromDate" class="customdatepicker" type="text" name="dob" placeholder="mm / dd / yyyy" required autocomplete="off"/>
+									<span>to</span>
+									<input id="toDate" class="customdatepicker" type="text" name="dob" placeholder="mm / dd / yyyy" required autocomplete="off"/>	
+									<div class="custom-calendar">
+										<span class="arrow-up">▲</span>
+										<div class="form-group">
+											<label class="pull-left">Type</label>
+											<select class="form-control type">
+												<option>Select</option>
+												<option selected>Service Date Range</option>
+											</select>
+										</div>
+										<div class="clearfix"></div>
+										<div class="form-group m-t-10 daterange-from">
+											<label class="pull-left">From</label>
+											<select class="form-control daterange-month">
+												<option value="">Month</option>
+												<option value="01">Janaury</option>
+												<option value="02">Febraury</option>
+												<option value="03">March</option>
+												<option value="04">April</option>
+												<option value="05">May</option>
+												<option value="06">June</option>
+												<option value="07">July</option>
+												<option value="08">August</option>
+												<option value="09">September</option>
+												<option value="10">October</option>
+												<option value="11">November</option>
+												<option value="12">December</option>
+											</select>
+											<select class="form-control daterange-day">
+												<option value="">Day</option>
+											</select>
+											<select class="form-control daterange-year">
+												<option value="">Year</option>												
+											</select>
+										</div>
+										<div class="clearfix"></div>
+										<div class="form-group m-t-10 daterange-to">
+											<label class="pull-left">To</label>
+											<select class="form-control daterange-month m-l-10">
+												<option value="">Month</option>
+												<option value="01">Janaury</option>
+												<option value="02">Febraury</option>
+												<option value="03">March</option>
+												<option value="04">April</option>
+												<option value="05">May</option>
+												<option value="06">June</option>
+												<option value="07">July</option>
+												<option value="08">August</option>
+												<option value="09">September</option>
+												<option value="10">October</option>
+												<option value="11">November</option>
+												<option value="12">December</option>
+											</select>
+											<select class="form-control daterange-day">
+												<option value="">Day</option>												
+											</select>
+											<select class="form-control daterange-year">
+												<option value="">Year</option>
+											</select>
+										</div>
+										<div class="clearfix"></div>
+										<button id="date-select" class="btn btn-sm">ok</button>
+									</div>
+								</div>								
+							</div>							
+						</div>								
+					</div>
+					<div class="col-md-1 col-sm-12 col-xs-12 text-center">
+						<button type="submit" class="btn btn-primary">Search</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<!--/ Filter end -->
+	
+	<section>
+	
+		<div class="wrapper">
+			
+			<!-- Tools -->	
+			
+			<div class="row">
+			
+				<div class="col-md-12">
+			
+					<div class="claimsTool">
+						<button class="btn btn-default"><img src="images/export-btn.png" />Export</button>
+						<div id="gridview-btn" class="switchview-btn active"></div>
+						<div id="listview-btn" class="switchview-btn"></div>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<!--/ Tools -->
+			
+			<!-- Grid View Claims List -->
+			
+			<div class="row claimsList gridView active">
+			
+				<div class="itemContainer">
+				
+					<div class="claimItem col-md-6">
+					
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+						
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+						
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+						
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+					
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+					
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">$593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+					
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">$593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+					
+					<div class="claimItem col-md-6">
+					
+						<a href="claimDetails.html">
+						<div class="panel">
+							<div class="panel-body">
+								
+								<div class="claim-date pull-left">
+									<div class="claim-month">
+										MAR
+									</div>
+									<div class="claim-day">
+										30
+									</div>
+									<div class="claim-year">
+										2015
+									</div>
+								</div>
+								
+								<div class="claim-details pull-left">
+									<h4>Kearney, Robert</h4>
+									<div class="col-md-6">
+										<label>Amount Billed</label>
+										<span class="lightFonts">$2,221.00</span>
+										<h5>Evan Ross</h5>
+									</div>
+									<div class="col-md-6">
+										<label>Patient Owes</label>
+										<span class="boldFonts">$593.66</span>
+										<h5 class="text-success">Paid</h5>
+									</div>
+									
+								</div>
+								
+								<div class="eob-btn pull-right">
+									<a href="#"><img src="images/eob-btn.png" /></a>
+								</div>
+								
+							</div>
+						</div>
+						</a>
+						
+					</div>
+																
+				</div>
+			
+				<!-- Pagination -->
+			
+				<div class="pagination-bar">
+				
+					
+					<div class="gridnav">
+					
+						<div 
+						   class="jplist-pagination" 
+						   data-control-type="pagination" 
+						   data-control-name="paging" 
+						   data-control-action="paging"
+						   data-items-per-page="6"
+						   data-control-animate-to-top="false">
+						</div>
+						
+						<div class="clearfix"></div>
+						
+					</div>
+					
+				
+				</div>
+				
+				<!--/ Pagination -->
+				
+			</div>
+			
+			<!--/ Grid View Claims List End-->
+			
+			<!-- List View Claims List -->
+			
+			<div class="row">
+			
+				<div class="listView col-md-12 paddingLeftZero">
+					
+					<div class="panel animated fadeInUp">
+						
+						<div class="panel-body">
+							
+							<table id="claimlist-table" class="custom-table">
+								<thead>	
+								<tr class="custom-table-heading">
+									<th class="custom-table-th wideColumn">
+										Provider										
+									</th>
+									<th class="custom-table-th">
+										Date of Service										
+									</th>
+									<th class="custom-table-th">
+										Status
+									</th>
+									<th class="custom-table-th">
+										Amount Billed
+									</th>
+									<th class="custom-table-th">
+										Patient Owes
+									</th>
+									<th class="custom-table-th">
+										Patient
+									</th>
+									<th class="custom-table-th width7 textCenter">
+										Explaination of Benefits
+									</th>
+								</tr>
+								</thead>
+								<tbody>															
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn grid-provider">
+										<a class="title" href="#">Kearney, Robert</a>
+									</td>
+									<td class="dos custom-table-td grid-dos">
+										2/30/2013
+									</td>
+									<td class="custom-table-td grid-status">
+										Paid
+									</td>
+									<td class="custom-table-td grid-amount-billed">
+										$2,221.00
+									</td>
+									<td class="custom-table-td grid-patient-owes">
+										$593.66
+									</td>
+									<td class="custom-table-td grid-patient-name">
+										Evan Ross
+									</td>
+									<td class="custom-table-td width7 textCenter grid-eob-btn">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+									
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Coastal Medical & Cosmetic Medical</a>
+									</td>
+									<td class="dos custom-table-td">
+										5/21/2013
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$100.00
+									</td>
+									<td class="custom-table-td">
+										$36.66
+									</td>
+									<td class="custom-table-td">
+										Alicia H. Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+									
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Robert, Kearney</a>
+									</td>
+									<td class="dos custom-table-td">
+										9/9/2014
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$100.00
+									</td>
+									<td class="custom-table-td">
+										$36.66
+									</td>
+									<td class="custom-table-td">
+										Evan Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+									
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Edward Ayub MS PT APC</a>
+									</td>
+									<td class="dos custom-table-td">
+										10/15/2014
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$100.00
+									</td>
+									<td class="custom-table-td">
+										$36.22
+									</td>
+									<td class="custom-table-td">
+										Kim R. Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+									
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Wong, Calvin K</a>
+									</td>
+									<td class="dos custom-table-td">
+										9/9/2013
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$285.00
+									</td>
+									<td class="custom-table-td">
+										$65.14
+									</td>
+									<td class="custom-table-td">
+										Kim R. Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+									
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Balboa Park Internal Medical</a>
+									</td>
+									<td class="dos custom-table-td">
+										1/20/2015
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$424.00
+									</td>
+									<td class="custom-table-td">
+										$25.00
+									</td>
+									<td class="custom-table-td">
+										Alicia H. Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+									
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Kim, Ross</a>
+									</td>
+									<td class="dos custom-table-td">
+										2/15/2015
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$424.00
+									</td>
+									<td class="custom-table-td">
+										$25.00
+									</td>
+									<td class="custom-table-td">
+										Alicia H. Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+								
+								<tr class="custom-table-body">
+									<td class="custom-table-td wideColumn">
+										<a class="title" href="#">Kim, Ross</a>
+									</td>
+									<td class="dos custom-table-td">
+										2/15/2015
+									</td>
+									<td class="custom-table-td">
+										Paid
+									</td>
+									<td class="custom-table-td">
+										$424.00
+									</td>
+									<td class="custom-table-td">
+										$25.00
+									</td>
+									<td class="custom-table-td">
+										Alicia H. Ross
+									</td>
+									<td class="custom-table-td width7 textCenter">
+										<a href="#"><img src="images/eob-btn.png" /></a>
+									</td>
+								</tr>
+								
+								</tbody>	
+							</table>	
+
+						</div>		
+					
+					</div>
+															
+					<!-- Pagination -->		
+			
+					<!-- <div class="pagination-bar">	
+									
+						<div class="listnav">
+						
+							<div 
+							   class="jplist-pagination" 
+							   data-control-type="pagination" 
+							   data-control-name="paging" 
+							   data-control-action="paging"
+							   data-items-per-page="6"
+							   data-control-animate-to-top="false">
+							</div>
+							
+							<div class="clearfix"></div>
+							
+						</div>
+					
+					</div> -->
+					
+					<!--/ Pagination -->
+					
+				</div>
+						
+			</div>
+					
+		</div>
+			
+		<!--/ List View Claims List End -->
+	
+	</section>
+	
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="support">
+						24 / 7 Customer Support<br>
+						<span><i class="glyphicon glyphicon-earphone"></i> 1-800-555-4321</span>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<a href="#"><div class="help-btn">
+						Questions? We're here to help!
+					</div></a>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="copyright">
+						&copy; 2015 Aldera.com 
+						<a href="#">Privacy Statement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Modal HTML -->
+    <div id="myModal" class="modal fade common-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="lookupLabel">Lookup a Provider</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<h5 class="lookup-description">Fill in any or all of these fields to find a provider you've visited who has filed a claim with us.</h5>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>First Name</label>
+								<div class="input-group-md">
+									<input type="text" name="firstname" class="form-control" required />														
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Last Name</label>
+								<div class="input-group-md">
+									<input type="text" name="lastname" class="form-control" required />														
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Provider Number</label>
+								<div class="input-group-md">
+									<input type="text" name="firstname" class="form-control" required />														
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Phone Number</label>
+								<div class="input-group-md">
+									<input type="text" name="lastname" class="form-control" required />														
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>City</label>
+								<div class="input-group-md">
+									<input type="text" name="firstname" class="form-control" required />														
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>State</label>
+								<div class="input-group-md">
+									<select class="form-control">
+										<option value="">No Preference</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>Type</label>
+								<div class="input-group-md">
+									<select class="form-control">
+										<option value="">No Preference</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>Network</label>
+								<div class="input-group-md">
+									<select class="form-control">
+										<option value="">No Preference</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				  </div>		  
+				  <div class="searchprovider-footer">
+						<div class="col-md-12 text-center">
+							<input id="search-providers" type="submit" class="btn btn-primary btn-large search-btn" value="Search" />
+						</div>
+				   </div>
+				
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- datatables javascript -->
+	<script src="js/datatables.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- jPList Core -->
+	<script src="js/jplist.core.min.js"></script>
+	<!-- jplist pagination bundle -->
+	<script src="js/jplist.pagination-bundle.min.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+		
+			$('#gridview-btn').click(function(){
+		
+				var listpage = $('.listView .paginate_button.current').html();
+				var pagenum = parseInt(listpage);
+				
+				var pagelink = $('.gridView .jplist-pagesbox button').attr('data-number',pagenum-1);
+				pagelink.trigger('click');
+				
+				$('#listview-btn').removeClass('active');	
+				$('#gridview-btn').addClass('active');	
+				$('.listView').hide();
+				$('.gridView').show();
+				
+			});
+	
+			$('#listview-btn').click(function(){
+		
+				var gridpage = $('.jplist-current').html();
+				var pagenum = parseInt(gridpage);
+				
+				$('#gridview-btn').removeClass('active');	
+				$('#listview-btn').addClass('active');	
+				$('.gridView').hide();
+				$('.listView').show();	
+				
+				var table = $('#claimlist-table').DataTable();
+				table.page( pagenum-1 ).draw( 'page' );
+			
+			});
+
+			$('#claimlist-table').DataTable({
+				"iDisplayLength": 6,
+				"info":false,
+				"bFilter": false,
+				"bLengthChange": false	 
+			});
+			
+		   $('.gridView').jplist({				
+			  itemsBox: '.itemContainer' 
+			  ,itemPath: '.claimItem' 
+			  ,panelPath: '.gridnav'
+			  ,redrawCallback: function(){
+					$('.claimItem').addClass('animated')
+								   .addClass('fadeInUp');								
+			   }
+		   });
+		   
+		   $('.jplist-next').html('<img src="images/navright.png">');
+		   $('.jplist-prev').html('<img src="images/navleft.png">');
+		
+		});
+	</script>
+
+  </body>
+</html>

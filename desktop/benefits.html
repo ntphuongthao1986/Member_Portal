@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Benefits</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	<link href="css/benefits.css" rel="stylesheet">
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/claimresponsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- Theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one">
+  
+    
+	<header class="main-header">
+		<div class="wrapper">
+			
+			<div class="topBar">
+				<div class="info pull-right">
+					<a class="message-link" href="#"><span class="badge">4</span><i class="glyphicon glyphicon-envelope"></i></a>
+					<select id="locale">
+						<option value="english">English</option>
+						<option value="spanish" selected>Spanish</option>
+					</select>
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						  Welcome, Evan! <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">						  
+						  <li><a href="#">Account Settings</a></li>
+						  <li><a href="index.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="menuBar">
+				<div class="logo pull-left"></div>
+				<ul class="menu">		
+					<li class="dropdown">      <!-- First level Menu -->
+						<a href="overview.html">Overview</a>						
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Claims & Benefits</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="claims.html">Claims</a></li>
+						  <li><a href="#">Authorizations</a></li>
+						  <li><a href="benefits.html">Benefits</a></li>	
+						  <li><a href="#">View / Print ID Card</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">	<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >My Profile</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->						  				
+						  <li><a href="basicInfo.html">Evan Ross</a></li>
+						  <li><a href="basicInfo.html">Rebecca Ross</a></li>
+						  <li><a href="basicInfo.html">Alicia Ross</a></li>
+						  <li><a href="basicInfo.html">Kim Ross</a></li>
+						  <li>
+							<a class="add-dependent" href="index.html">								
+								<i class="glyphicon glyphicon-plus"></i> Add a dependent
+							</a>
+						  </li>						  
+						</ul>
+					</li>
+					<li><a href="#">News & Events</a></li>
+					<li class="dropdown"> 		<!-- First level Menu -->
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Help & Support</a>
+						<ul class="dropdown-menu">       <!-- Second level Menu -->
+						  <li><a href="#">Contact Us</a></li>
+						  <li><a href="#">FAQ</a></li>						  
+						  <li><a href="#">Forms & Documents</a></li>
+						</ul>
+					</li>
+					<li><a href="findProviderPostlogin.html"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="collapse-menu-icon">
+				<img src="images/collapse-nav-icon.png" />
+			</div>
+			
+			<h1 class="pageTitle benefitsTitle">Benefits</h1>
+			
+			<h4 class="pageFilter">History</h4>
+			
+		</div>		
+	</header>
+	
+	<!-- Collapse Nav bar -->
+	
+	<nav>
+		<ul>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-road"></i> Overview</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Mission & Vision</a></li>
+					<li><a href="#">Founders</a></li>
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-lock"></i> Claims & Benefits</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Member Benefit maintenance</a></li>					
+				</ul>
+			</li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-info-sign"></i> My Info</a>
+				<ul class="second-level-menu">
+					<li><a href="#">My Health Plan</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-tag"></i> News & Events</a></li>
+			<li class="first-level-menu">
+				<a href="#"><i class="glyphicon glyphicon-question-sign"></i> Help & Support</a>
+				<ul class="second-level-menu">
+					<li><a href="#">Customer Service</a></li>					
+				</ul>
+			</li>
+			<li><a href="#"><i class="glyphicon glyphicon-search"></i> Find a Provider</a></li>
+			<li><a href="index.html"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+		</ul>
+	</nav>
+	
+	<!--/ Collapse Nav bar -->
+	
+	<section class="mp-benefits">
+	
+		<div class="wrapper">
+
+			<div class="open-enrollment-notif">
+				<div class="notif-content col-md-9">
+					<h4>Open Enrollment for 2016</h4>
+					<span>Starting November 1, 2015 through January 31, 2016, you may make changes to your benefit options. No action is needed if you're planning to keep the same coverage you already have.</span>
+				</div>
+				<div class="col-md-3 btn btn-notification">
+					<a href="#" class="">Enroll Now</a>
+				</div>
+			</div>
+			
+			<div class="tab-menu">
+				<ul class="nav nav-tabs">
+					<li data-toggle="tab" href="#healthyHmo" class="active">Healthy Connect HMO Gold</li>
+					<li data-toggle="tab" href="#dentalHmo">Dental HMO</li>
+					<li class="otherCoverage" data-toggle="tab" href="#otherCoverage">Other Coverage</li>
+				</ul>
+				<div class="btn-wrap">
+					<a href="#" class="aldera-btn"> <i class="glyphicon glyphicon-time"></i> History of Benefits</a>
+					<a href="#" class="aldera-btn"> <i class="glyphicon glyphicon-pencil"></i> Change Benefit Selection</a>
+				</div>
+			</div>
+			
+			<div class="panel benefits-panel">
+				<div class="panel-body tab-content">
+					
+					<div id="healthyHmo" class="tab-pane fade in active" >
+					
+						<h2>Healthy Connect HMO Gold</h2>
+						<div class="panel-tools">
+							<a id="viewcard-btn" href="#" class="btn btn-plain"> <img src="images/creditcard.png" /> View ID Card</a>
+							<a href="#" class="btn btn-plain"> <img src="images/pdf.png" /> Download</a>
+							<a href="#" class="btn btn-plain"> <img src="images/print.png" /> Print</a>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="benefits-table">
+							<div class="benefits-row">
+								<div class="benefits-column">Plan Type</div><div class="benefits-column">PPO</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Level of Coverage</div><div class="benefits-column">Gold</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Network</div><div class="benefits-column">Scripps Gold Network</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Service Area</div><div class="benefits-column">California</div>							
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Formulary Name</div><div class="benefits-column">Scripps Prescription</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Effective Date</div><div class="benefits-column">01/01/2015</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">National Network</div><div class="benefits-column">Yes</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Out of Country Coverage</div><div class="benefits-column">Yes, Emergency</div>
+							</div>
+							<div class="benefits-row">
+								<div class="benefits-column">Out of Service Area Coverage</div><div class="benefits-column">Yes, Emergency Only</div>
+							</div>						
+						</div>
+						
+						<div class="nav-panels">
+							<ul class="nav nav-buttons">
+							  <li data-panel="pane1" class="active"><a >Deductible</a></li>
+							  <li data-panel="pane2"><a >Out of Pocket Maximums</a></li>						  
+							</ul>
+							<div id="pane1" class="nav-pane active">
+							
+								<div class="individuals-graph">
+								
+									<h4 class="graph-title">Individual</h4>
+								
+									<div class="circular-bar">
+										<span>In-Network</span>
+										<input type="text" class="individual-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="459" max-value="1000">
+										<div class="circular-bar-content">
+											<label></label>
+											<strong>of $1000</strong>									
+										</div>
+									</div> 
+
+									<div class="circular-bar">
+										<span>Out-of-Network</span>
+										<input type="text" class="individual-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="0" max-value="1000">
+										<div class="circular-bar-content">
+											<h3>N/A</h3>										
+										</div>
+									</div> 
+								
+								</div>
+								
+								<div class="family-graph">
+								
+									<h4 class="graph-title">Family</h4>
+
+									<div class="circular-bar">
+										<span>In-Network</span>
+										<input type="text" class="family-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="130" data-height="130" data-linecap=round  value="959" max-value="2000">
+										<div class="circular-bar-content">
+											<label></label>
+											<strong>of $2000</strong>									
+										</div>
+									</div> 
+
+									<div class="circular-bar">
+										<span>Out-of-Network</span>
+										<input type="text" class="family-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="130" data-height="130" data-linecap=round  value="0" max-value="2000">
+										<div class="circular-bar-content">
+											<h3>N/A</h3>									
+										</div>
+									</div>	
+									
+								</div>
+								
+							</div>
+							
+							<div id="pane2" class="nav-pane text-center"> <!-- START pane2 - Out of Pocket Maximum -->
+								
+								<div class="individuals-graph" style="border-right: solid 1px #DFDFDF;">
+								
+									<h4 class="graph-title">Individual</h4>
+								
+									<div class="circular-bar">
+										<span>In-Network</span>
+										<input type="text" class="individual-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="3211" max-value="6600">
+										<div class="circular-bar-content">
+											<label></label>
+											<strong>of $6600</strong>									
+										</div>
+									</div> 
+
+									<div class="circular-bar">
+										<span>Out-of-Network</span>
+										<input type="text" class="individual-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="0" max-value="6600">
+										<div class="circular-bar-content">
+											<h3>N/A</h3>										
+										</div>
+									</div> 
+
+									<div class="circular-bar">
+										<span>Combined</span>
+										<input type="text" class="individual-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="0" max-value="6600">
+										<div class="circular-bar-content">
+											<h3>N/A</h3>										
+										</div>
+									</div> 
+								
+								</div>
+								
+								<div class="family-graph">
+								
+									<h4 class="graph-title">Family</h4>
+
+									<div class="circular-bar">
+										<span>In-Network</span>
+										<input type="text" class="family-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="3211" max-value="6600">
+										<div class="circular-bar-content">
+											<label></label>
+											<strong>of $6600</strong>									
+										</div>
+									</div> 
+
+									<div class="circular-bar">
+										<span>Out-of-Network</span>
+										<input type="text" class="family-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="0" max-value="6600">
+										<div class="circular-bar-content">
+											<h3>N/A</h3>									
+										</div>
+									</div>	
+
+									<div class="circular-bar">
+										<span>Combined</span>
+										<input type="text" class="individual-benefit" data-angleOffset=0 data-fgColor="#96999d" data-width="120" data-height="120" data-linecap=round  value="0" max-value="6600">
+										<div class="circular-bar-content">
+											<h3>N/A</h3>										
+										</div>
+									</div> 
+									
+								</div>
+								
+							</div> <!-- END pane2 - OUt of Pocket Maximums -->
+							
+						</div>
+						
+						<div class="bene-details">
+							<h4>Who's Covered?</h4>
+							<div class="bene-actions">
+								<a class="add-depend" data-toggle="modal" data-target="#benefit-modal-window" onclick="openBenefitModal('addDependentModal.html')"><i class="glyphicon glyphicon-plus"></i> Add Dependent</a>
+								<a class="terminate-coverage" data-toggle="modal" data-target="#benefit-modal-window" onclick="openBenefitModal('terminateCoverageModal.html')"><i class="glyphicon glyphicon-remove"></i> Terminate Coverage</a>
+							</div>
+							<div class="clearfix"></div>
+							<div class="bene-name">
+								<i class="glyphicon glyphicon-user"></i> Evan Ross
+							</div>
+						</div>
+						
+						<div class="plan-search-panel">
+					
+							<form class="form-inline" role="form">
+							  <div class="form-group">						
+								<input type="text" class="form-control" id="search-box" placeholder="I'm looking for a specific benefit...">
+							  </div>					  
+							  <button type="submit" class="btn btn-primary">Search</button>
+							</form>
+							
+							<div id="benefits-search" class="benefits-table">
+								<div class="benefits-row">
+									<div class="benefits-column">Primary Care Visit</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $10, Co-Insurance N/A</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $20, Co-Insurance 20%</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Specialist Visit</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $40, Co-Insurance No Charge</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $0, Co-Insurance 100%</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Other Practitioner Office Visit</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $40, Co-Insurance No Charge</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $0, Co-Insurance 100%</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Outpatient Facility</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $40, Co-Insurance 20% after deductible</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $0, Co-Insurance 100%</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Outpatient Surgery</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay No Charge, Co-Insurance 20% after deductible</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $0, Co-Insurance 1005</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Hospice Service</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay No Charge, Co-Insurance 20% after deductible, $10,000 per lifetime</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $0, Co-Insurance 100%, $10,000 per lifetime</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Infertility Treatment</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay No Charge, Co-Insurance 20% after deductible, $50,000 per lifetime</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $0, Co-Insurance 100%, $5,000 per lifetime</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Urgent Care Centers of Facilities</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $50, Co-Insurance No Charge</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $50, Co-Insurance 100%</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Home Health Care Services</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay No Charge, Co-Insurance 20% after deductible, $100 visit per Benefit Period</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $50, Co-Insurance 100%, 100 visits per Benefit Period</div>
+									</div>
+								</div>						
+								<div class="benefits-row">
+									<div class="benefits-column">Emergency Room Services</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $250, Co-Insurance No charge, Exclude overnight stay</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data">Co-pay $250, Co-Insurance No Charge, exclude overnight stay</div>
+									</div>
+								</div>
+								<div class="benefits-row">
+									<div class="benefits-column">Emergency Transportation / Ambulance</div>
+									<div class="benefits-column">
+										<div class="column-title">In-Network</div>
+										<div class="column-data">Co-pay $100, Co-Insurance No charges</div>
+									</div>
+									<div class="benefits-column">
+										<div class="column-title">Out-of-Network</div>
+										<div class="column-data"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					
+					</div>
+					
+					<!-- Tab pane end -->
+					
+					<div id="dentalHmo" class="tab-pane fade">
+					
+						dentalhmo
+					
+					</div>
+					
+					<!-- Tab pane end -->
+					
+					<div id="otherCoverage" class="tab-pane fade">
+					
+						othercoverage
+					
+					</div>
+					
+					<!-- Tab pane end -->
+					
+				</div>
+			</div>
+			
+			<a href="#" class="help-icon">
+				<div class="q-btn">?</div>
+				<span>Help</span>
+			</a>
+			
+			
+		</div>
+	
+	</section>
+	
+	<!-- START - Modal Window Placeholder -->
+	<div class="modal fade" id="benefit-modal-window">
+		
+	</div>
+	<!-- END - Modal Window Placeholder -->
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="support">
+						24 / 7 Customer Support<br>
+						<span><i class="glyphicon glyphicon-earphone"></i> 1-800-555-4321</span>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<a href="#"><div class="help-btn">
+						Questions? We're here to help!
+					</div></a>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="copyright">
+						&copy; 2015 Aldera.com 
+						<a href="#">Privacy Statement</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/jqueryknob.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script>
+	
+		// $(document).ready(function(){
+		// 	// Panel menu navigation function
+			
+		// 	$(document).on('click','.tab-menu li',function(){
+		// 		$(this).siblings('.tab-menu li').removeClass('active');
+		// 		$(this).addClass('active');
+		// 		var link = $(this).attr('data-href');
+		// 		$(this).parents().eq(1).siblings('.benefits-panel').find('.tab-pane').removeClass('active');				
+		// 		$(this).parents().eq(1).siblings('.benefits-panel').find('#'+link+'').addClass('active');
+		// 	});
+			
+		// });
+	
+	</script>
+
+	<!-- Common javascript -->
+	<script src="js/benefits.js"></script>
+
+  </body>
+</html>

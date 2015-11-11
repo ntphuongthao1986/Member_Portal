@@ -1,0 +1,395 @@
+/* Benefits Style */
+
+.btn-wrap{
+	float:right;
+	margin-top:-5px;
+}
+
+.btn-wrap .btn{
+	display:inline-block;
+}
+
+.aldera-btn{
+	border:1px solid #bfbec2;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	font-family:relwaySemibold;
+	padding:10px 12px;
+	cursor:pointer;
+	margin-left:10px;
+}
+
+a.aldera-btn{
+	color:#848484;
+}
+
+.aldera-btn i{
+	font-size:1.3em;
+	position:relative;
+	top:4px;
+	left:-1px;
+}	
+
+.panel.benefits-panel{
+	margin-bottom:10px;
+}
+
+.benefits-panel .panel-body{
+	padding:17px 40px;
+}
+
+.benefits-panel .panel-body h2{
+	font-family:relwayThin;
+	color:#6b6f72;
+	display:inline-block;
+	font-size;0.9em;
+}
+
+.panel-tools{
+	float:right;
+	margin-top:20px;
+}
+
+a.btn-plain{
+	font-family:relwaySemibold;
+	color:#4ca8e5;
+}
+
+.btn-plain img{
+	color:#bfbec2;
+	margin-bottom:5px;
+	margin-right:7px;
+}
+
+.benefits-table{
+	width:100%;
+	margin-top:30px;
+}
+
+.benefits-column{
+	display:inline-block;
+	margin-left:-5px;
+	vertical-align:top;
+}
+
+.benefits-column:first-child{
+	font-family:opensansExtrabold;
+	width:20%;
+	color:#6b6f72;
+}
+
+.benefits-column:last-child{
+	width:75%;
+	color:#96999d;
+	font-family:relwaySemibold;
+	padding-left:20px;
+}
+
+.benefits-row{
+	padding:10px 15px;	
+	border-radius:4px;
+	
+}
+
+.benefits-column:nth-child(2){
+	-webkit-border-top-left-radius: 0px!important;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 0px;
+
+	border-top-left-radius: 0px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 0px;
+}
+
+.benefits-column:nth-child(1){
+	-webkit-border-top-left-radius: 4px!important;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 4px;
+
+	border-top-left-radius: 4px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 4px;
+}
+
+.benefits-row:nth-child(odd){
+	background:#eee;
+}
+
+.nav-panels{
+	margin-top:32px;
+}
+
+.nav-pane{
+	margin-top:30px;
+	height:257px;
+	display:none;
+	border-bottom:1px solid #C3C3C3;
+}
+
+.nav-pane.active{
+	display:block;
+}
+
+.nav-panels .nav-buttons{
+	border-bottom:1px solid #C3C3C3;
+}
+
+.nav-panels .nav-buttons li{
+	display:inline-block;
+	cursor:pointer;
+}
+
+.nav-panels .nav-buttons li a:hover{
+	background:transparent;
+	color:#6b6f72;
+}
+
+.nav-panels .nav-buttons li.active a{
+	color:#6b6f72;
+}
+
+.nav-panels .nav-buttons li.active{
+	border-bottom:3px solid #6b6f72;
+}
+
+/* circular graph */
+
+
+
+@mixin font-size($size: 1.6,$line: $size*1.5) {
+    font-size:   ($size) + px;
+    font-size:   $size/16 + rem;
+    line-height: $line/16 + rem;
+    line-height: ($line) + px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.circular-bar{
+  text-align: center;
+  /*width:40%;*/
+  display:inline-block;
+  padding-right: 10px;
+}
+
+.circular-bar-content{
+    margin-bottom: 70px;
+    margin-top: -90px;
+    text-align: center;
+}
+
+.circular-bar strong{
+  display: block;
+  font-weight: 300;
+  @include font-size(18,24);
+}
+	
+.circular-bar label{
+  text-align:center;
+  display: block;
+  font-weight: 600;
+  font-size:1.2em;
+  font-family:opensansSemibold;
+  margin-bottom:0px;
+}
+
+.circular-bar span{
+	display:block;
+	margin-bottom:10px;
+	color:#848484;
+}
+
+.circular-bar h3{
+	position: relative;
+    top: -10px;
+	font-size:1.5em;
+}
+
+.individuals-graph, .family-graph{
+	width:45%;
+	display:inline-block;
+}
+
+.graph-title{
+	color:#6b6f72;
+	text-align:center;
+	width: 79%;
+	margin-bottom:30px;
+}
+
+#pane1{
+	padding-left:100px;
+}
+
+.bene-details{
+	margin-top:41px;
+	margin-bottom:40px;
+}
+
+.bene-details h4{
+	font-family:opensansExtrabold;
+	text-transform:uppercase;
+	color:#6b6f72;
+	display:inline-block;
+}
+
+.bene-actions{
+	display:inline-block;
+	float:right;
+}
+
+a.add-depend{
+	color:#4ca8e5;
+	margin-right:15px;
+}
+
+a.terminate-coverage{
+	color:#B20000;
+}
+
+.bene-name{
+	margin-top:30px;
+	color:#848484;
+}
+
+.plan-search-panel{
+	margin-bottom:60px;
+}
+
+.plan-search-panel .panel-body{
+	padding:40px 40px;
+}
+
+.plan-search-panel .form-group{
+	width:88%;
+}
+
+.plan-search-panel .form-group #search-box{
+	width:100%;
+	height:40px;
+}
+
+.plan-search-panel form button{
+	height:40px;
+	width:90px;
+	display:inline-block;
+}
+
+#benefits-search .benefits-column:first-child{
+	color:#6b6f72;
+}
+
+#benefits-search .benefits-column{
+	width:33.33%;
+	word-wrap:break-word;
+	padding-right:10px;
+	color:#96999d;
+    font-family: relwaySemibold;
+}
+
+#benefits-search .benefits-column .column-title{
+	display:none;
+}
+
+.column-title{
+	display:none;
+}
+
+
+.benefits-table-th{
+	font-family:azosansRegular;
+	font-size:12px;
+	color:rgba(0,0,0,0.45);
+	line-height:15px;
+	text-align:left;
+}
+
+.benefits-table-td{
+	font-family:azosansRegular;
+	font-size:14px;
+	color:rgba(0,0,0,0.70);
+	line-height:20px;
+	text-align:left;
+}
+
+.col-md-12, .col-md-2 {
+	padding: 0px;
+}
+
+.open-enrollment-notif{
+	background:#C83D3F;
+	opacity: .4;
+	border-radius:3px;
+	height:103px;
+	margin-top: 20px;
+	padding: 10px 40px 10px 30px;
+}
+
+.notif-content h4, .notif-content span{
+	font-size:14px;
+	color:#FFFFFF;
+	text-align:left;
+	font-weight:700;
+}
+
+.notif-content h4{
+	margin-bottom: 5px;
+	font-family: azoSansBold;
+}
+
+.notif-content span{
+	font-family: azoSansRegular;
+}
+
+.terminate-coverage-modal, .add-dependent-modal  {
+	width: 400px;
+}
+
+/*.add-dependent-modal {
+	width: 450px;
+}*/
+
+#benefit-modal-window .modal-header,  #benefit-modal-window .modal-body{
+	padding: 25px;
+}
+
+
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
+	margin-left: 0px;
+	position: relative;
+}
+
+#benefit-modal-window .btn{
+	display: inline;
+	width: 40%;
+	float: left;
+	margin: 10px 18px;
+}
+
+#benefit-modal-window .btn-default {
+	border: 1px solid #bfbec2;
+}
+
+.maintenance-reason select {
+	width: 100%;
+	height: 35px;
+}
+
+.alert-message {
+	padding-left: 24px;
+}

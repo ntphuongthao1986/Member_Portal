@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Enrollment Review</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Datepicker -->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet" />
+	<link href="css/newenrollment.css" rel="stylesheet" />
+	
+	<!-- Responsive Style Sheet -->
+	<link href="css/responsive.css" rel="stylesheet" />
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	
+	<!-- theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+	
+  </head>
+  <body class="fade-in one">
+    
+	<header class="prelogin">
+		<div class="wrapper">
+			<div class="logo pull-left"></div>
+			<div class="info pull-right">
+				<div class="support">
+					<i class="glyphicon glyphicon-earphone"></i> 24/7 Customer Support
+					<span>1-800-555-4321</span>
+				</div>
+				<select id="locale">
+					<option value="english">English</option>
+					<option value="spanish" selected>Spanish</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+	</header>
+	
+	<section>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="enroll-subhead">
+						<!-- progressbar -->
+						<ul id="progressbar">
+							<li class="active"><a href="newEnrollment.html">New Enrollment</a></li>
+							<li class="active"><a href="newEnrollmentAccount.html">Create Your Account</a></li>
+							<li class="current">Submission Review</li>
+						</ul>
+					</div>
+					<h1 class='custom-form-heading1'>Review</h1>
+					<p class="enrollreview-description lighttext-md">Please take a moment to review the information you've provided us.</p>
+				</div>
+			</div>
+			<form class="review-form" method="post" action="enrollmentSubmitted.html">
+				
+				<div class="panel">
+					<div class="panel-body">
+						<div class="review-section selectedPlan">
+							<div class="row">
+								<div class="col-md-12">
+									<h3 class="pull-left">Selected Plan</h3>									
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Plan name</label>
+									<div class="darktext-md">
+										<a href="#">Dental HMO</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<label>Begin Date</label>
+									<div class="darktext-md">
+										11/01/2015
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="review-section">
+							<div class="row">
+								<div class="col-md-12">
+									<h3 class="pull-left">Evan Ross</h3>
+									<a class="pull-right" href="newEnrollment.html"><img src="images/edit.png" /> Change</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Address</label>
+									<div class="darktext-md">
+										555 Elm Street San Diego, Ca 92103
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Email</label>
+									<div class="darktext-md">
+										eross@test.com
+									</div>
+								</div>
+								<div class="col-md-2 width21">
+									<label>Phone</label>
+									<div class="darktext-md">
+										<p>Home: 619-999-0505</P>
+										<p>Work: 619-888-0909</P>
+										<p>Mobile: 619-777-0808</P>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Date of Birth</label>
+									<div class="darktext-md">
+										07/09/1967
+									</div>
+								</div>
+								<div class="col-md-2 width20">
+									<label>Social Security Number</label>
+									<div class="darktext-md">
+										111-22-3333
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Marital Status</label>
+									<div class="darktext-md">
+										Married
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Gender</label>
+									<div class="darktext-md">
+										Male
+									</div>
+								</div>
+								<div class="col-md-2 width21">
+									<label>Relationship</label>
+									<div class="darktext-md">
+										Self
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Student Status</label>
+									<div class="darktext-md">
+										Not a Student
+									</div>
+								</div>
+								<div class="col-md-2 width20">
+									<label>Handicapped?</label>
+									<div class="darktext-md">
+										No
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Primary Language</label>
+									<div class="darktext-md">
+										English
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Use of Language - Primary</label>
+									<div class="darktext-md">
+										Native Language
+									</div>
+								</div>
+								<div class="col-md-2 width21">
+									<label>Secondary Language</label>
+									<div class="darktext-md">
+										Spanish
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Use of Language - Secondary</label>
+									<div class="darktext-md">
+										Spoken
+									</div>
+								</div>
+								<div class="col-md-2 width20">
+									<label>Race/Ethnicity</label>
+									<div class="darktext-md">
+										Caucasian
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Primary Care Provider</label>
+									<div class="darktext-md">
+										Jason Mann
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="review-section">
+							<div class="row">
+								<div class="col-md-12">
+									<h3 class="pull-left">Rebecca Ross</h3>									
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Address</label>
+									<div class="darktext-md">
+										555 Elm Street San Diego, Ca 92103
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Email</label>
+									<div class="darktext-md">
+										eross@test.com
+									</div>
+								</div>			
+								<div class="col-md-2">
+									<label>Gender</label>
+									<div class="darktext-md">
+										Male
+									</div>
+								</div>	
+								<div class="col-md-2">
+									<label>Date of Birth</label>
+									<div class="darktext-md">
+										07/09/1967
+									</div>
+								</div>
+								<div class="col-md-2 width20">
+									<label>Social Security Number</label>
+									<div class="darktext-md">
+										111-22-3333
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Primary Language</label>
+									<div class="darktext-md">
+										English
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Use of Language - Primary</label>
+									<div class="darktext-md">
+										Native Language
+									</div>
+								</div>
+								<div class="col-md-2 width21">
+									<label>Secondary Language</label>
+									<div class="darktext-md">
+										Spanish
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Use of Language - Secondary</label>
+									<div class="darktext-md">
+										Spoken
+									</div>
+								</div>
+								<div class="col-md-2 width20">
+									<label>Race/Ethnicity</label>
+									<div class="darktext-md">
+										Caucasian
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label>Primary Care Provider</label>
+									<div class="darktext-md">
+										Jason Mann
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="review-section">
+							<div class="row">
+								<div class="col-md-12">
+									<h3 class="pull-left">Other Coverage</h3>									
+								</div>
+							</div>
+							<label>Blue Cross</label>
+							<div class="row">
+								<div class="col-md-2">
+									<label>Action</label>
+									<div class="darktext-md">
+										Added
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Policy Number</label>
+									<div class="darktext-md">
+										10203-098
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Payer Resp Seq Code</label>
+									<div class="darktext-md">
+										Secondary
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Coordination of Benefits</label>
+									<div class="darktext-md">
+										Coordination of Benefits
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>COB Begin Date</label>
+									<div class="darktext-md">
+										09/01/2015
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>COB End Date</label>
+									<div class="darktext-md">
+										12/31/2015
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<h3 class="pull-left">Broker Info</h3>									
+								</div>
+							</div>							
+							<div class="row">
+								<div class="col-md-2">
+									<label>Broker Name</label>
+									<div class="darktext-md">
+										John Smith
+									</div>
+								</div>
+								<div class="col-md-2">
+									<label>Broker Phone</label>
+									<div class="darktext-md">
+										(405) 123-1544
+									</div>
+								</div>
+								<div class="col-md-3">
+									<label>Broker Address</label>
+									<div class="darktext-md">
+										123 Smart Street San Diego CA, 92123
+									</div>
+								</div>								
+							</div>
+						</div>
+						
+						<div class="review-section">
+							<div class="row">
+								<div class="col-md-12">
+									<h3>Premium Info</h3>																											
+								</div>								
+								<div class="col-md-12">
+									<div class="premium-table">
+										<div class="form-group form-inline">
+											<label>Plan Name</label>
+											<span class="text-field"><a href="#">Dental HMO</a></span>
+										</div>
+										<div class="form-group form-inline">
+											<label>Premium Amount</label>
+											<span class="text-field">$300.00</span>
+										</div>
+										<div class="form-group form-inline">
+											<label>Payment Frequency</label>
+											<span class="text-field">
+												<select class="alderaSelectbox">
+													<option>Annual</option>
+													<option>Monthly</option>
+												</select>
+											</span>
+										</div>
+										<div class="form-group form-inline">
+											<label>Deposit Amount</label>
+											<span class="text-field">$0.00</span>
+										</div>
+										<div class="form-group form-inline total-section">
+											<label>Total Amount Due</label>
+											<span class="text-field">$300.00</span>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>							
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="panel">
+					<div class="panel-body">
+						<div class="benefit-controls">
+							<a href="newEnrollmentAccount.html" class="btn btn-secondary btn-lg dark pull-left">Back</a>
+							<div class="pull-right">
+								<button class="btn btn-default btn-lg">Cancel</button>								
+								<button class="btn btn-primary btn-lg">Submit Enrollment</button>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</section>
+	
+	<footer class="prelogin">
+		<div class="wrapper">
+			<div class="pull-left">
+				&copy; 2015 Aldera.com
+			</div>
+			<div class="pull-right">
+				<a href="#">Privacy Statement</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+   
+   <script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>	
+
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+			/* Custom select initialize */
+	
+			window.asd = $('.alderaSelectbox').SumoSelect({ csvDispCount: 3 });
+			
+			$(document).on('click','.SumoSelect',function(){
+				$(this).addClass('selectshadow');				
+			});
+			
+			$(document).on('click','.SumoSelect ul li',function(e){
+				$(this).parent().parent().parent().removeClass('selectshadow');
+				e.stopPropagation();
+			});	
+			
+			$('.SumoSelect').blur(function(){
+				$(this).removeClass('selectshadow');
+				$('.optWrapper').removeClass('open');
+			});
+
+		});
+	
+	</script>
+
+  </body>
+</html>

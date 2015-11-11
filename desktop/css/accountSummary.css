@@ -1,0 +1,235 @@
+.acctsummary-pane{
+	margin-bottom:150px;
+}
+
+.due-section{
+	text-align:center;
+	padding:20px 20px;
+}
+
+.thin-amtfield{
+	font-family:azosansRegular;
+	font-size:25px;
+	color:rgba(0,0,0,0.45);
+}
+
+.thick-amtfield{
+	font-family:azosansBold;
+	font-size:25px;
+	color:rgba(0,0,0,0.50);
+}
+
+.due-section .btn-pay{
+	margin:0 auto;
+	width:80%;
+}
+
+.due-section .refresh-btn{
+	margin-top:20px;
+}
+
+.math-sign{
+	font-family:azosansRegular;
+	font-size:30px;
+	color:rgba(0,0,0,0.45);
+	position:relative;
+	top:23px;
+}
+
+.transaction-history{
+	border-top:1px solid rgba(0,0,0,0.10);
+	width:95%;
+	margin:0 auto;
+	padding:20px 0px;
+}
+
+.transaction-header .alderaSelectbox{
+	width:60%;
+}
+
+.transaction-header .SumoSelect{
+	display:inline-block!important;
+}
+
+.transaction-header .date-range{
+	width:60%;
+	position:relative;
+	left:10px;
+}
+
+.transaction-history h4{
+	text-transform:uppercase;
+}
+
+.transaction-header .date-range-label{
+	display:inline-block;
+	position: relative;
+    top: -5px;
+}
+
+.transaction-history .selection-type{
+	width:25%;
+	display:inline-block;
+	margin-right:15px;
+}
+
+.transaction-history .datepicker-container{
+	width:28%;
+	display:inline-block;
+	position: relative;
+    top: -5px;
+}
+
+.transaction-history .datepicker-divider{
+	display:inline-block;
+	width:5%;
+	text-align:center;
+	font-family:azosansRegular;
+}
+
+.transaction-body{
+	padding-top:80px;
+}
+
+.transaction-table.dataTable tbody td{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.transaction-table tbody td.details-control {
+    background: url('../images/collapse-icon.png') no-repeat center center;
+    cursor: pointer;
+}
+.transaction-table tbody tr.shown td.details-control {
+    background: url('../images/expand-icon.png') no-repeat center center;
+}
+
+.transaction-table.dataTable tbody td table td{
+	padding:10px 40px 0px 0px;
+	font-size:12px;
+}
+
+.billing-section{
+	padding:10px 25px;
+}
+
+.billingdetail-table{
+	margin-bottom:10px;
+	font-size:12px;
+}
+
+.billingdetail-table td:first-child{
+	width:70%;
+}
+
+.billingdetail-table tr{
+	background:transparent!important;
+}
+
+.table-topborder{
+	border-top:1px solid rgba(0,0,0,0.10);
+}
+
+.currentBilling-Invoice{
+	margin-top:50px;
+}
+
+/* Invoice Style */
+
+.invoice-modal .modal-dialog{
+	width:1000px;
+}
+
+.invoice-modal .modal-header{
+	padding:25px 40px 20px 40px;
+}
+
+.invoice-modal .modal-body{
+	padding:30px 40px 25px 40px;
+}
+
+.invoice-address{
+	position:relative;
+}
+
+.invoice-address .pay-to, .invoice-address .billed-to{
+	display:inline-block;
+	width:140px;
+	margin-left:92px;
+}
+
+.invoice-address address{
+	font-family:azosansRegular;
+	font-size:14px;
+	color:rgba(0,0,0,0.50);
+}
+
+.invoice-address label{
+	position:absolute;
+	top:10px;
+}
+
+.invoice-details-table{
+	width:100%;
+}
+
+.address-wrap{
+	margin-bottom:50px;
+}
+
+table th{
+	font-family:azosansRegular;
+	font-size:12px;
+	color:rgba(0,0,0,0.40);
+	padding-bottom:10px;
+	padding-left:10px!important;
+	border-top:0px!important;
+}
+
+table td{
+	font-family:azosansRegular;
+	font-size:12px;
+	color:rgba(0,0,0,0.50);
+}
+
+table .table-total td{
+	font-family:azosansBold!important;
+}
+
+.invoice-premiums, .invoice-adjustments{
+	margin-bottom:50px;
+}
+
+.invoice-premiums .table-total, .invoice-adjustments .table-total{
+	background:rgba(0,0,0,0.10);
+}
+
+.invoice-totals table td:first-child{
+	width:73%;
+}
+
+.invoice-summary table td{
+	font-size:15px;
+}
+
+.invoice-summary table th, .invoice-summary table td{
+	border-top:0px!important;
+}
+
+.invoice-summary table .table-total td{
+	border-top:1px solid rgba(0,0,0,0.10)!important;
+} 
+
+.invoice-summary p{
+	font-family:azosansRegular;
+	font-size:15px;
+	color:rgba(0,0,0,0.50);
+}
+
+.invoice-summary .table-total td h3{
+	margin:0px;
+}
+
+.invoice-tools .btn{
+	width:100px;
+}

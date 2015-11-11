@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aldera - Log In</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Common Style Sheet -->
+	<link href="css/commonStyle.css" rel="stylesheet">
+	<!-- Responsive Style Sheet -->
+	<link href="css/responsive.css" rel="stylesheet">
+	
+	<!-- Custom Select -->
+	<link href="css/sumoselect.css" rel="stylesheet" />
+	
+	<!-- Custom Scrollbar -->
+	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	
+	<!-- loader -->
+	<link href="css/nprogress.css" rel="stylesheet">
+	<!-- theme -->
+	<link href="css/alderatheme.css" rel="stylesheet">
+
+  </head>
+  <body class="fade-in one">
+    
+	<div class="noticebar">
+		<div class="wrapper">
+			<div class="messagebox">
+				<div>
+					<b>Maintenance Notice</b><br>
+					The portal will be down for maintenance July 13th from 2am to 4am PST. We apologize for any inconvenience! 
+				</div>
+			</div>
+			<button class="btn btn-xs pull-right close-btn"><img src="images/common/noticebar-close.png" /></button>
+		</div>
+	</div>
+	
+	<header class="prelogin">
+		<div class="wrapper">
+			<div class="logo pull-left"></div>
+			<div class="info pull-right">
+				<div class="support">
+					<img src="images/common/phonelight.png" /> 24/7 Customer Support
+					<span>1-800-555-4321</span>
+				</div>
+				<select id="locale">
+					<option value="english">English</option>
+					<option value="spanish" selected>Spanish</option>
+				</select>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+	</header>
+	
+	<section class="mp-login">
+		<div class="wrapper">
+			<form class="login-form" method="post" action="termsandconditions.html">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label>Username</label>
+							<div class="input-group input-group-lg">
+								<input type="text" name="username" class="form-control" required />
+								<span class="input-group-addon"><a href="forgotUsername1.html">Forgot?</a></span>							
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Password</label>
+							<div class="input-group input-group-lg">
+								<input type="password" name="password" class="form-control" required />
+								<span class="input-group-addon"><a href="forgotPassword1.html">Forgot?</a></span>							
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg" >Log In</button>
+					</div>
+				</div>
+				<div class="row links">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="findProviderPrelogin.html">
+						<img src="images/search.png" /><br>
+						Find a Provider
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="#">
+						<img src="images/quote.png" /><br>
+						Get a Quote
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="enrollOrRegister.html">
+						<img src="images/register.png" /><br>
+						Register / Enroll
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	
+	<footer class='prelogin'>
+		<div class="wrapper">
+			<div class="pull-left">
+				&copy; 2015 Aldera.com
+			</div>
+			<div class="pull-right">
+				<a href="#">Privacy Statement</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</footer>
+   
+    <script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+	
+	<!-- Datepicker js -->
+	<script src="js/jquery-ui.min.js"></script>
+	
+	<!-- placeholder support for IE and older browsers -->
+	<script src="js/jquery.placeholder.min.js"></script>
+	
+	<!-- Custom Scrollbar -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	
+	<!-- Custom Select -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	
+	<!-- Custom Scrollbar Mousewheel support -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Loader -->
+	<script src="js/nprogress.js"></script>
+	
+	<!-- Common javascript -->
+	<script src="js/commonscript.js"></script>
+	
+	<!-- NoticeBar animation -->
+	<script>
+		$(document).ready(function(){
+			var noticebarheight = $('.noticebar').height();
+			//alert(noticebarheight);
+			$('.noticebar').css('top','-'+noticebarheight+'px');
+			$('.noticebar').animate({top:"0px"}, 800);
+			$('header').animate({marginTop:noticebarheight+"px"}, 800);
+			
+			$('.close-btn').click(function(){
+				$('.noticebar').animate({top:"-"+noticebarheight+"px"}, 800);
+				$('header').animate({marginTop:"0px"}, 800);
+			});
+		});
+		
+	</script>	
+	
+  </body>
+</html>
